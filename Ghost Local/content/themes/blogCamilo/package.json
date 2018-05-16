@@ -1,7 +1,7 @@
 {
   "name":"BlogThemeCamilo",
-  "description":"",
-  "version":"",
+  "description":"Tema para Ghost para mi blog personal",
+  "version":"0.0.1",
   "engines":{
     "ghost":">=1.0.0"
   },
