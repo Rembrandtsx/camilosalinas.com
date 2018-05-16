@@ -1,0 +1,22 @@
+{
+  "name":"BlogThemeCamilo",
+  "description":"",
+  "version":"",
+  "engines":{
+    "ghost":">=1.0.0"
+  },
+  "author":{
+    "name":"Camilo Andres Salinas",
+    "email":"camilo@ggitapps.com"
+
+  },
+  "config":{
+    "post_per_page": 3
+  }
+
+
+
+
+
+
+}
