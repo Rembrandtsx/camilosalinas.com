@@ -1,3 +1,4 @@
+
 body
 {
   margin: 0;
@@ -6,6 +7,7 @@ body
   color: #cdcdcd;
   font-family: "Raleway", sans-serif;
   font-smoothing: antialiased;
+
   }
 
 a
@@ -24,11 +26,11 @@ a:hover
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   top: 50px;
   left: 50px;
 
-  z-index: 1;
+  z-index: 100;
 
   -webkit-user-select: none;
   user-select: none;
@@ -123,7 +125,7 @@ a:hover
   margin: -100px 0 0 -50px;
   padding: 0px;
   padding-top: 125px;
-  height: 100vh;
+  height: calc(100vh);
   background: #00796B;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -160,3 +162,40 @@ a:hover
 {
   transform: none;
 }
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.center {
+  display: block;
+}
+.titulo{
+  font-size: 5em;
+  font-weight: 400;
+}
+.titulo .middle-green-font{
+  color: #00796B;
+}
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
