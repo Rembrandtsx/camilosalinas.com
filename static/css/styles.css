@@ -199,3 +199,58 @@ main{
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.links a{
+  text-decoration:none;
+  color: #cdcdcd;
+  font-size:50px;
+  text-align: center;
+
+}
+.links a i.fa-github:hover{
+  color: #6e5494;
+  transition: all 0.5s ease;
+}
+
+.links a i.fa-facebook:hover{
+  color: #3b5998;
+  transition: all 0.5s ease;
+}
+.links a i.fa-twitter:hover{
+  color: #55acee;
+  transition: all 0.5s ease;
+}
+.links a i.fa-instagram{
+  
+  transition: all 0.5s ease;
+}
+.links a i.fa-instagram:hover{
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.links a i.fa-instagram:hover::before{
+
+  display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    width: calc(100% + 5px);
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    transition: all 0.5s ease;
+}
+.links a i.fa-linkedin:hover{
+  color: #007bb5;
+  transition: all 0.5s ease;
+}
+.links a i.fa-globe:hover{
+  color: #3b5998;
+  transition: all 0.5s ease;
+}
