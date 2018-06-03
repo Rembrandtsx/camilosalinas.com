@@ -1,4 +1,3 @@
-
 body
 {
   margin: 0;
@@ -227,7 +226,7 @@ main{
   transition: all 0.5s ease;
 }
 .links a i.fa-instagram{
-  
+
   transition: all 0.5s ease;
 }
 .links a i.fa-instagram:hover{
@@ -253,4 +252,9 @@ main{
 .links a i.fa-globe:hover{
   color: #3b5998;
   transition: all 0.5s ease;
+}
+
+@media all and (max-width: 480px) {
+    /* styles for iPhone/Android landscape (and really narrow browser windows) */
+    html{display: none;}
 }
