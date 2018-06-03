@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
+::selection {
+  color: #fff;
+  background: #2a2b39;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #2a2b39;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Raleway", sans-serif;
+  font-smoothing: antialiased;
+
+  }
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #cdcdcd;
+}
+
+main p {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+main a {
+  color: #2a2b39;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+main a:hover {
+  color: #6acd79;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.bussinesscard {
+  height: 320px;
+  width: 428px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 43px -10px black;
+  position: relative;
+  margin-top: 10px;
+  margin: 10px 20px;
+  flex: 0 1 calc(33% - 40px);
+}
+.bussinesscard .flip {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.bussinesscard .front {
+  z-index: 11;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.bussinesscard .front .top {
+  height: 50%;
+  background: #2a2b39;
+}
+.bussinesscard .front .top:after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+.bussinesscard .front .top:after {
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  -moz-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  bottom: 9em;
+  z-index: 10;
+  background: inherit;
+}
+.bussinesscard .front .top .logo {
+  display: inline-block;
+  background: #6acd79;
+  color: #fff;
+  z-index: 11;
+  padding: .16em;
+  border: 8px solid #fff;
+  position: relative;
+  pointer-events: none;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: .4em;
+  font-size: 4em;
+  border-radius:10px;
+}
+.bussinesscard .front .top .logo .fat {
+  font-weight: 800;
+}
+.bussinesscard .front .top .logo .skinny {
+  font-weight: 100;
+}
+.bussinesscard .front .nametroduction {
+  margin-top: 2.4em;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  z-index: 8;
+
+}
+.bussinesscard .front .name {
+  color: #2a2b39;
+  font-weight: 400;
+  font-size: 2.2em;
+  text-align: center;
+  position: relative;
+  margin-bottom: .35em;
+}
+.bussinesscard .front .name:after {
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+  height: 1px;
+  background: #2a2b39;
+}
+.bussinesscard .front .introduction {
+  text-align: center;
+  color: #2a2b39;
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+}
+.bussinesscard .front .contact {
+  color: #2a2b39;
+  margin-left: 1.7em;
+  font-weight: 300;
+  font-size: 1.6em;
+  -moz-transform: translateY(400%);
+  -ms-transform: translateY(400%);
+  -webkit-transform: translateY(400%);
+  transform: translateY(400%);
+}
+.bussinesscard .front .contact span {
+  color: #2D3244;
+  font-size: 1.7em;
+  width: 1.3em;
+  display: inline-block;
+}
+.bussinesscard .front .contact a {
+  position: relative;
+  bottom: .24em;
+}
+
+
+
+/* HOVER ANIMATIONS */
+.front .top .logo, .front .top, .front .top:after, .front .nametroduction, .front .contact {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.flip:hover .front .top .logo {
+  margin-top: .28em;
+  font-size: 1.3em;
+  border: 3px solid #fff;
+  margin-left: .15em;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  left: 0;
+}
+
+.flip:hover .front .top {
+  height: 15%;
+}
+.flip:hover .front .top:after {
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 16.3em;
+}
+
+.flip:hover .front .nametroduction {
+  -moz-transform: translateY(400%);
+  -ms-transform: translateY(400%);
+  -webkit-transform: translateY(400%);
+  transform: translateY(400%);
+}
+
+.flip:hover .front .contact {
+  -moz-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  -webkit-transform: translateY(-52%);
+  transform: translateY(-52%);
+}
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+
+  z-index: 100;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #00796B;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 0px;
+  padding-top: 125px;
+  height: calc(100vh);
+  background: #00796B;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu a:hover{
+  background: #232323;
+  display: block;
+
+
+}
+#menu li
+{
+  padding: 10px 10px;
+  line-height: 60px;
+  text-indent:20px;
+  font-size: 22px;
+  font-weight: 400;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.center {
+  text-align: center;
+}
+.titulo{
+  font-size: 5em;
+  font-weight: 400;
+}

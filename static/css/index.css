@@ -169,7 +169,7 @@ main{
   min-height: 100vh;
 }
 .center {
-  display: block;
+  text-align: center;
 }
 .titulo{
   font-size: 5em;
@@ -256,5 +256,11 @@ main{
 
 @media all and (max-width: 480px) {
     /* styles for iPhone/Android landscape (and really narrow browser windows) */
-    html{display: none;}
+    .titulo{
+      font-size: 1.5em;
+    }
+    .links a {
+      font-size: 20px;
+    }
+
 }
