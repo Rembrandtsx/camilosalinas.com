@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="menu-burguer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `menu-burguer`
+     * Burguer menu for camilosalinas.me website
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MenuBurguer extends Polymer.Element {
+      static get is() { return 'menu-burguer'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'menu-burguer'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MenuBurguer.is, MenuBurguer);
+  </script>
+</dom-module>
