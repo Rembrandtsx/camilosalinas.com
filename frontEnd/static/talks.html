@@ -102,27 +102,17 @@
                   <div class="card__face__divider"></div>
                   
                   <div class="card__face__from-to">
-                    <p>{{card.fromStreet}}-----{{card.fromCity}}</p>
-                    <p>{{card.toStreet}}, {{card.toCity}}</p>
+                   {{card.Title}} <br>
                   </div>
                   <div class="card__face__deliv-date">
                     <i class="{{card.skill}}" style="font-size:30px;"></i>
                   </div>
                   <div class="card__face__stats card__face__stats--req">
-                    Requests
-                    <p>{{card.requests}}</p>
+                    {{card.description | limitTo: 140}} ...
+                    
                   </div>
-                  <div class="card__face__stats card__face__stats--pledge">
-                    Pledge
-                    <p>${{card.pledge}}</p>
-                  </div>
-                  <div class="card__face__stats card__face__stats--weight">
-                    Weight
-                    <p class="card__face__stats__weight">
-                      <span ng-show="card.weight < 60">Light</span>
-                      <span ng-show="card.weight > 60">Heavy</span>
-                    </p>
-                  </div>
+
+
                 </div>
               </div>
               <div class="card__part__side m--front">
@@ -194,10 +184,11 @@
                         </div>
                       </div>
                     </div>
+                  
                     <div class="card__timer">60 min 00 sec</div>
                     <section class="card__part card__part-4">
                       <div class="card__part__side m--back"></div>
-                      <div class="card__part__side m--front">
+                      <div class="card__part__side m--front" style="height: 50px;">
                         <button type="button" class="card__request-btn">
                           <span class="card__request-btn__text-1">Request</span>
                         </button>
