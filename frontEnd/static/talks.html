@@ -79,18 +79,10 @@
                   <span class="card__header__price">{{card.day}}Aaaaaa</span>
                 </header>
                 <div class="card__stats" ng-style="{'background-image': 'url({{card.bgImgUrl}})'}">
-                  <div class="card__stats__item card__stats__item--req">
-                    <p class="card__stats__type">Requests</p>
-                    <span class="card__stats__value">{{card.requests}}</span>
-                  </div>
-                  <div class="card__stats__item card__stats__item--pledge">
-                    <p class="card__stats__type">Pledge</p>
-                    <span class="card__stats__value">${{card.pledge}}</span>
-                  </div>
                   <div class="card__stats__item card__stats__item--weight">
-                    <p class="card__stats__type">Weight</p>
-                    <span class="card__stats__value">{{card.weight}} oz</span>
-                  </div>
+                    
+                    <p class="card__stats__type">{{card.description}}</p>
+                    </div>
                 </div>
               </div>
             </section>
@@ -117,7 +109,7 @@
               </div>
               <div class="card__part__side m--front">
                 <div class="card__sender">
-                  <h4 class="card__sender__heading">Sender</h4>
+                  <h4 class="card__sender__heading">Expositor</h4>
                   <div class="card__sender__img-cont">
                     <div class="card__sender__img-cont__inner">
                       <img ng-src="{{card.senderImg}}" class="card__sender__img" />
@@ -157,15 +149,9 @@
                 <div class="card__from-to">
                   <div class="card__from-to__inner">
                     <div class="card__text card__text--left">
-                      <p class="card__text__heading">From</p>
-                      <p class="card__text__middle">{{card.fromStreet}}</p>
-                      <p class="card__text__bottom">{{card.fromCity}}</p>
+                      <h1 class="card__text__heading"><strong>Presentación:</strong> <a href="{{card.linkPresentacion}}" style="text-decoration:none;">{{card.linkPresentacion}}</a></h1>                      
                     </div>
-                    <div class="card__text card__text--right">
-                      <p class="card__text__heading">To</p>
-                      <p class="card__text__middle">{{card.toStreet}}</p>
-                      <p class="card__text__bottom">{{card.toCity}}</p>
-                    </div>
+                    
                   </div>
                 </div>
                 <section class="card__part card__part-3">
@@ -202,8 +188,11 @@
           </div>
         </div>
     </main>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    
+
     <script src="js/angular-card.js"></script>
   </body>
 </html>

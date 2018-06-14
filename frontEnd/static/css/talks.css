@@ -751,6 +751,7 @@ CARDS
   background-size: cover;
   background-position: center center;
   transition: opacity 0.6s;
+  width: auto;
 }
 .card__stats:before {
   content: "";
@@ -783,8 +784,9 @@ CARDS
 }
 .card__stats__item--weight {
   z-index: 2;
-  right: 20px;
-  text-align: right;
+  width: 100%;
+  text-shadow: 1px 1px 1px white, 0 0 0px white, 0 0 1px white;
+  text-align: center;
 }
 .card__stats__type {
   font-size: 12px;
@@ -1038,6 +1040,7 @@ CARDS
 .card__from-to__inner {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 .card__from-to__inner:before {
   content: "";
