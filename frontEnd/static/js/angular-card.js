@@ -115,6 +115,7 @@ var delivcardDefaultData = [
   description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
   day: 25,
   month:'Dec',
+  year:'',
   skill:node_Theme.logo,
   linkPresentacion:'https://genetica.ggitapps.com/#/',
   sender: 'Camilo Salinas',
@@ -124,6 +125,11 @@ var delivcardDefaultData = [
   bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
   lan:'',
   videoUrl:'',
+  place:'',
+  org:'',
+  sponsor:'',
+  htmlTag:'',
+  rating:5,
 
   },
  {
@@ -131,6 +137,7 @@ var delivcardDefaultData = [
   description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
   day: 25,
   month:'Dec',
+  year:'',
   skill:js_Theme.logo,
   linkPresentacion:'https://genetica.ggitapps.com/#/',
   sender: 'Camilo Salinas',
@@ -140,6 +147,13 @@ var delivcardDefaultData = [
   bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
   lan:'',
   videoUrl:'',
+  place:'',
+  org:'',
+  sponsor:'',
+  htmlTag:'<h1>Holaaaa</h1>',
+  rating:5,
+  
+
   
   },
   {
@@ -147,6 +161,7 @@ var delivcardDefaultData = [
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
     day: 25,
     month:'Dec',
+    year:'',
     skill:node_Theme.logo,
     linkPresentacion:'https://genetica.ggitapps.com/#/',
     sender: 'Camilo Salinas',
@@ -156,6 +171,11 @@ var delivcardDefaultData = [
     bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
     lan:'',
     videoUrl:'',
+    place:'',
+    org:'',
+    sponsor:'',
+    htmlTag:'',
+    rating:5,
     
     },
     {
@@ -163,6 +183,7 @@ var delivcardDefaultData = [
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
       day: 25,
       month:'Dec',
+      year:'',
       skill:node_Theme.logo,
       linkPresentacion:'https://genetica.ggitapps.com/#/',
       sender: 'Camilo Salinas',
@@ -172,6 +193,11 @@ var delivcardDefaultData = [
       bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
       lan:'',
       videoUrl:'',
+      place:'',
+      org:'',
+      sponsor:'',
+      htmlTag:'',
+      rating:5,
       
       },
       {
@@ -179,6 +205,7 @@ var delivcardDefaultData = [
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
         day: 25,
         month:'Dec',
+        year:'',
         skill:node_Theme.logo,
         linkPresentacion:'https://genetica.ggitapps.com/#/',
         sender: 'Camilo Salinas',
@@ -188,6 +215,11 @@ var delivcardDefaultData = [
         bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
         lan:'',
         videoUrl:'',
+        place:'',
+        org:'',
+        sponsor:'',
+        htmlTag:'',
+        rating:5,
         
         },
         {
@@ -195,6 +227,7 @@ var delivcardDefaultData = [
           description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
           day: 25,
           month:'Dec',
+          year:'',
           skill:node_Theme.logo,
           linkPresentacion:'https://genetica.ggitapps.com/#/',
           sender: 'Camilo Salinas',
@@ -204,6 +237,11 @@ var delivcardDefaultData = [
           bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
           lan:'',
           videoUrl:'',
+          place:'',
+          org:'',
+          sponsor:'',
+          htmlTag:'',
+          rating:5,
           
           }
  
@@ -215,3 +253,10 @@ app.controller("DelivCtrl", ['$scope', function($scope) {
   $scope.cards = delivcardDefaultData;
 
 }]);
+
+app.filter('exists', function() {
+  return function(x) {
+      
+      return x == ''? 'none':''+x;
+  };
+});

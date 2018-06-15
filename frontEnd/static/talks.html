@@ -95,12 +95,14 @@
                   
                   <div class="card__face__from-to">
                    {{card.Title}} <br>
+                   
                   </div>
                   <div class="card__face__deliv-date">
                     <i class="{{card.skill}}" style="font-size:30px;"></i>
                   </div>
                   <div class="card__face__stats card__face__stats--req">
                     {{card.description | limitTo: 140}} ...
+                    
                     
                   </div>
 
@@ -115,18 +117,19 @@
                       <img ng-src="{{card.senderImg}}" class="card__sender__img" />
                     </div>
                   </div>
-                  <div class="card__sender__name-and-rating">
+                  <div class="card__sender__name-and-rating" >
                     <p class="card__sender__name">{{card.sender}}</p>
-                    <p class="card__sender__rating card__sender__rating-{{card.rating}}">
+                    <p class="card__sender__rating card__sender__rating-{{card.rating}}" style="transform: translateY(-20px)">
                       <span class="card__sender__rating__star">&#9733;</span>
                       <span class="card__sender__rating__star">&#9733;</span>
                       <span class="card__sender__rating__star">&#9733;</span>
                       <span class="card__sender__rating__star">&#9733;</span>
                       <span class="card__sender__rating__star">&#9733;</span>
-                      <span class="card__sender__rating__count">({{card.ratingCount}})</span>
+                      
                     </p>
                     <p class="card__sender__address">
-                      {{card.fromStreet}}, {{card.fromCity}}
+                      {{card.sponsor | exists}}
+                      
                     </p>
                   </div>
                   <div class="card__receiver">
