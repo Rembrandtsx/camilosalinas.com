@@ -1138,7 +1138,10 @@ CARDS
 .card.req-active2 .card__counter {
   display: none;
 }
-
+/* Estilos*/
+.display-none{
+  display: none;
+}
 /* OWN COLORS*/
 
 

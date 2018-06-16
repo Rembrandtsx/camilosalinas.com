@@ -76,7 +76,7 @@
                 <header class="card__header">
                   <div class="card__header__close-btn"></div>
                   <span class="card__header__id">{{card.Title}}</span>
-                  <span class="card__header__price">{{card.day}}Aaaaaa</span>
+                  <span class="card__header__price">{{card.day}}/{{card.month}}/{{card.year}}</span>
                 </header>
                 <div class="card__stats" ng-style="{'background-image': 'url({{card.bgImgUrl}})'}">
                   <div class="card__stats__item card__stats__item--weight">
@@ -152,7 +152,7 @@
                 <div class="card__from-to">
                   <div class="card__from-to__inner">
                     <div class="card__text card__text--left">
-                      <h1 class="card__text__heading"><strong>Presentación:</strong> <a href="{{card.linkPresentacion}}" style="text-decoration:none;">{{card.linkPresentacion}}</a></h1>                      
+                      <h1 class="card__text__heading {{card.linkPresentacion | exists}}"  style="" ><strong><i class="fas fa-chalkboard-teacher"></i> Presentación:</strong> <a href="{{card.linkPresentacion}}" style="text-decoration:none;">{{card.linkPresentacion}}</a></h1>                      
                     </div>
                     
                   </div>
@@ -178,9 +178,11 @@
                     <section class="card__part card__part-4">
                       <div class="card__part__side m--back"></div>
                       <div class="card__part__side m--front" style="height: 50px;">
-                        <button type="button" class="card__request-btn">
-                          <span class="card__request-btn__text-1">Request</span>
-                        </button>
+                        <a ng-href="{{card.linkPresentacion}}" style="text-decoration: none;"> 
+                            <button type="button" class="card__request-btn" >
+                                <span class="card__request-btn__text-1" >Presentación</span>
+                             </button>
+                        </a> 
                         </div>
                     </section>
                   </div>

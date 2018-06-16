@@ -128,7 +128,7 @@ var delivcardDefaultData = [
   place:'',
   org:'',
   sponsor:'',
-  htmlTag:'',
+   
   rating:5,
 
   },
@@ -150,7 +150,7 @@ var delivcardDefaultData = [
   place:'',
   org:'',
   sponsor:'',
-  htmlTag:'<h1>Holaaaa</h1>',
+  
   rating:5,
   
 
@@ -174,7 +174,7 @@ var delivcardDefaultData = [
     place:'',
     org:'',
     sponsor:'',
-    htmlTag:'',
+    
     rating:5,
     
     },
@@ -196,7 +196,7 @@ var delivcardDefaultData = [
       place:'',
       org:'',
       sponsor:'',
-      htmlTag:'',
+      
       rating:5,
       
       },
@@ -218,7 +218,7 @@ var delivcardDefaultData = [
         place:'',
         org:'',
         sponsor:'',
-        htmlTag:'',
+        
         rating:5,
         
         },
@@ -229,7 +229,7 @@ var delivcardDefaultData = [
           month:'Dec',
           year:'',
           skill:node_Theme.logo,
-          linkPresentacion:'https://genetica.ggitapps.com/#/',
+          linkPresentacion:'',
           sender: 'Camilo Salinas',
           senderImg: 'https://s33.postimg.cc/kvrvgducf/camilo.jpg',
           themeColor: node_Theme.color,
@@ -239,8 +239,7 @@ var delivcardDefaultData = [
           videoUrl:'',
           place:'',
           org:'',
-          sponsor:'',
-          htmlTag:'',
+          sponsor:'asd',
           rating:5,
           
           }
@@ -257,6 +256,6 @@ app.controller("DelivCtrl", ['$scope', function($scope) {
 app.filter('exists', function() {
   return function(x) {
       
-      return x == ''? 'none':''+x;
+      return x == ''? 'display-none':'';
   };
 });
