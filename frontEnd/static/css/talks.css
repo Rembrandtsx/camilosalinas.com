@@ -554,9 +554,13 @@ CARDS
   height: 100%;
   border-radius: inherit;
 }
+.card__text--inner_flex{
+  display: flex;
+  justify-content: space-around;
+}
 .card__text {
   overflow: hidden;
-  position: absolute;
+  
   top: 0;
   width: 50%;
   height: 100%;
@@ -1079,7 +1083,7 @@ CARDS
 }
 .card__request-btn {
   position: relative;
-  width: 90%;
+  width: 95%;
   height: 40px;
   margin-left: 2.5%;
   background-color: #FFBD18;

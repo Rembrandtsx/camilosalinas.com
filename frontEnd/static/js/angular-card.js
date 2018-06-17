@@ -124,12 +124,14 @@ var delivcardDefaultData = [
   themeColorHex: node_Theme.hex,
   bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
   lan:'',
-  videoUrl:'',
   place:'',
   org:'',
-  sponsor:'',
-   
+  sponsor:'', 
   rating:5,
+  blogPostUrl:'',
+  repoUrl:'',
+  videoUrl:'',
+  testLiveUrl:''
 
   },
  {
@@ -146,12 +148,14 @@ var delivcardDefaultData = [
   themeColorHex: js_Theme.hex,
   bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
   lan:'',
-  videoUrl:'',
   place:'',
   org:'',
   sponsor:'',
-  
   rating:5,
+  blogPostUrl:'',
+  repoUrl:'',
+  videoUrl:'',
+  testLiveUrl:''
   
 
   
@@ -170,12 +174,14 @@ var delivcardDefaultData = [
     themeColorHex: node_Theme.hex,
     bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
     lan:'',
-    videoUrl:'',
     place:'',
     org:'',
     sponsor:'',
-    
     rating:5,
+    blogPostUrl:'',
+    repoUrl:'',
+    videoUrl:'',
+    testLiveUrl:''
     
     },
     {
@@ -192,12 +198,14 @@ var delivcardDefaultData = [
       themeColorHex: node_Theme.hex,
       bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
       lan:'',
-      videoUrl:'',
       place:'',
       org:'',
       sponsor:'',
-      
       rating:5,
+      blogPostUrl:'',
+      repoUrl:'',
+      videoUrl:'',
+      testLiveUrl:''
       
       },
       {
@@ -213,34 +221,38 @@ var delivcardDefaultData = [
         themeColor: node_Theme.color,
         themeColorHex: node_Theme.hex,
         bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
-        lan:'',
-        videoUrl:'',
+        lan:'',      
         place:'',
         org:'',
         sponsor:'',
-        
         rating:5,
-        
+        blogPostUrl:'',
+        repoUrl:'',
+        videoUrl:'',
+        testLiveUrl:''
         },
         {
           Title: 'Creando un API-REST en Node.js',
           description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque cum iusto in minima consectetur, vel qui officiis consequuntur. Nulla doloremque cumque deleniti reprehenderit quia iste ipsum tenetur voluptates debitis!',
           day: 25,
-          month:'Dec',
-          year:'',
+          month:'Jun',
+          year:'2018',
           skill:node_Theme.logo,
-          linkPresentacion:'',
+          linkPresentacion:'https://genetica.ggitapps.com',
           sender: 'Camilo Salinas',
           senderImg: 'https://s33.postimg.cc/kvrvgducf/camilo.jpg',
           themeColor: node_Theme.color,
           themeColorHex: node_Theme.hex,
           bgImgUrl: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=59c481f9e78716b8680515bb37de49d0',
-          lan:'',
-          videoUrl:'',
-          place:'',
-          org:'',
-          sponsor:'asd',
+          lan:'ES',
+          place:'Bogota, Colombia',
+          org:'Facebook Dev Circles',
+          sponsor:'Facebook',
           rating:5,
+          blogPostUrl:'camilosalinas.me/blog',
+          repoUrl:'github.com/rembrandtsx',
+          videoUrl:'video.com',
+          testLiveUrl:'app.ggitapps.com'
           
           }
  

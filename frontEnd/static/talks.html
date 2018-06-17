@@ -127,10 +127,7 @@
                       <span class="card__sender__rating__star">&#9733;</span>
                       
                     </p>
-                    <p class="card__sender__address">
-                      {{card.sponsor | exists}}
-                      
-                    </p>
+                   
                   </div>
                   <div class="card__receiver">
                     <div class="card__receiver__inner">
@@ -150,31 +147,42 @@
                   <div class="card__path-big"></div>
                 </div>
                 <div class="card__from-to">
-                  <div class="card__from-to__inner">
-                    <div class="card__text card__text--left">
-                      <h1 class="card__text__heading {{card.linkPresentacion | exists}}"  style="" ><strong><i class="fas fa-chalkboard-teacher"></i> Presentación:</strong> <a href="{{card.linkPresentacion}}" style="text-decoration:none;">{{card.linkPresentacion}}</a></h1>                      
+                  <div class="card__from-to__inner" style="display: flex">
+                    <div class="card__text ">
+                      <h1 class="card__text__heading {{card.videoUrl | exists}}"  style="" ><strong><i class="fab fa-youtube"></i> Video:</strong> <a href="{{card.videoUrl}}" style="text-decoration:none;">{{card.videoUrl}}</a></h1>                      
+                      <h1 class="card__text__heading {{card.blogPostUrl | exists}}"  style="" ><strong><i class="fas fa-book"></i> Blog Post:</strong> <a href="{{card.blogPostUrl}}" style="text-decoration:none;">{{card.blogPostUrl}}</a></h1>                      
+                      
                     </div>
+                    <div class="card__text ">
+                        <h1 class="card__text__heading {{card.repoUrl | exists}}"  style="" ><strong><i class="fab fa-github"></i> Repositorio:</strong> <a href="{{card.repoUrl}}" style="text-decoration:none;">{{card.repoUrl}}</a></h1>                      
+                        <h1 class="card__text__heading {{card.testLiveUrl | exists}}"  style="" ><strong><i class="fas fa-play"></i> Demo:</strong> <a href="{{card.testLiveUrl}}" style="text-decoration:none;">{{card.testLiveUrl}}</a></h1>                      
+                        
+                      </div>
                     
                   </div>
                 </div>
                 <section class="card__part card__part-3">
                   <div class="card__part__side m--back"></div>
                   <div class="card__part__side m--front">
-                    <div class="card__timings">
-                      <div class="card__timings__inner">
-                        <div class="card__text card__text--left">
-                          <p class="card__text__heading">Delivery Date</p>
-                          <p class="card__text__middle">{{card.delivTime}}</p>
-                          <p class="card__text__bottom">{{card.delivTime}}</p>
+                    <div class="card__timings" >
+                      <div class="card__timings__inner card__text--inner_flex">
+                        <div class="card__text {{card.place | exists}}">
+                          <p class="card__text__heading">Lugar</p>
+                          <p class="card__text__middle">{{card.place}}</p>
                         </div>
-                        <div class="card__text card__text--right">
-                          <p class="card__text__heading">Request Deadline</p>
-                          <p class="card__text__middle">{{card.reqDl}}</p>
+                        <div class="card__text {{card.org | exists}}">
+                          <p class="card__text__heading">Organización</p>
+                          <p class="card__text__middle">{{card.org}}</p>
                         </div>
+                        <div class="card__text {{card.sponsor | exists}}">
+                            <p class="card__text__heading">Sponsor</p>
+                            <p class="card__text__middle">{{card.sponsor}}</p>
+                          </div>
+                          
                       </div>
                     </div>
                   
-                    <div class="card__timer">60 min 00 sec</div>
+                    
                     <section class="card__part card__part-4">
                       <div class="card__part__side m--back"></div>
                       <div class="card__part__side m--front" style="height: 50px;">
