@@ -74,9 +74,16 @@ src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-cal
 <!-- Prepare a container for your calendar. -->
 <div class="calendar">
   <!-- Loading stuff -->
-  Loading the data just for you.
+  <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
+    <circle id="loading-inner" cx="75" cy="75" r="60"/>
+ </svg>
 </div>
 
+<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="js/timeline.js"></script>
 <script>
   GitHubCalendar(".calendar", "Rembrandtsx");
 </script>
