@@ -5,9 +5,6 @@ import { TalksComponent } from './talks/talks.component';
 export const routes = [
     { path: '', component: HomeComponent, pathMatch: 'full'},
     { path: 'talks', component: TalksComponent},
-    /** Talks subsites*/
-
-    /* End Talks Subsites */
     { path: 'about', component: MenuComponent},
     { path: 'portfolio', component: MenuComponent},
     { path: 'contact', component: MenuComponent},

@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { TalksComponent } from './talks/talks.component';
 
 
 import {TransferHttpCacheModule} from '@nguniversal/common';
@@ -17,6 +18,7 @@ import { routes } from './routes';
     AppComponent,
     HomeComponent,
     MenuComponent,
+    TalksComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
