@@ -12,6 +12,14 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
 
 import { routes } from './routes';
 
+import { TalksService } from './services/talks.services';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http'; 
+
+/*Pipes*/
+import { ExistsPipe } from './pipes/exists.pipe';
+import {LimitTo}from './pipes/limitTo.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +27,17 @@ import { routes } from './routes';
     HomeComponent,
     MenuComponent,
     TalksComponent,
+    ExistsPipe,
+    LimitTo,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot(routes),
     TransferHttpCacheModule,
+    HttpModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [TalksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
