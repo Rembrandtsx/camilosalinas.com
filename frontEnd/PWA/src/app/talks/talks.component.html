@@ -1,5 +1,6 @@
 <h1 class="titulo center">Talks</h1>
-    <div class="phone__content" *ngFor="let talk of talks">
+<section @enterState>   
+<div class="phone__content" *ngFor="let talk of talks">
         <section  class="card theme-{{talk.themeColor}}" >
             
      <section class="card__part card__part-1">
@@ -130,4 +131,4 @@
      </section>
 </section>
     </div>
- 
+</section> 

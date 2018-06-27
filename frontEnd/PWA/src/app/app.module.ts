@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { TalksComponent } from './talks/talks.component';
+import { AboutComponent } from './about/about.component';
+
 
 
 import {TransferHttpCacheModule} from '@nguniversal/common';
@@ -20,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ExistsPipe } from './pipes/exists.pipe';
 import {LimitTo}from './pipes/limitTo.pipe';
 
+/*Animations */
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import {LimitTo}from './pipes/limitTo.pipe';
     HomeComponent,
     MenuComponent,
     TalksComponent,
+    AboutComponent,
     ExistsPipe,
     LimitTo,
   ],
@@ -36,6 +41,8 @@ import {LimitTo}from './pipes/limitTo.pipe';
     TransferHttpCacheModule,
     HttpModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [TalksService],
   bootstrap: [AppComponent]

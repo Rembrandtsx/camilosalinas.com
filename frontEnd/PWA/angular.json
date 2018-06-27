@@ -30,7 +30,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["src/assets/jquery-3.3.1.min.js"]
+            "scripts": ["src/assets/jquery-3.3.1.min.js","src/assets/github-calendar.min.js"]
           },
           "configurations": {
             "production": {
