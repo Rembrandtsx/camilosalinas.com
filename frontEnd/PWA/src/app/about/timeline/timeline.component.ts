@@ -10,22 +10,7 @@ declare const GitHubCalendar:any;
 @Component({
     selector:'timeline-component',
     templateUrl:'timeline.component.html',
-    styleUrls:['timeline.component.css'],
-    animations:[
-        trigger('enterState',[
-          state('void',style({
-            transition : "all ease-out",
-            opacity:0,
-            transform:'translateX(-1500px)'
-          })),
-          transition(':enter',[
-            animate(800,style({
-              transform:'translate(0px)',
-              opacity:1
-            }))
-          ])
-        ])
-      ]
+    styleUrls:['timeline.component.css']
 })
 export class TimeLineComponent implements OnInit{
     public timelineEvents:any[];
