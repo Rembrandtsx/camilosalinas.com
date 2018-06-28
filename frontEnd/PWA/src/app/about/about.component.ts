@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TalksService } from '../services/talks.services';
-import { HttpClientModule } from '@angular/common/http'; import { HttpModule } from '@angular/http';
 import { trigger,state,style,transition,animate } from '@angular/animations'
 declare const jQuery:any;
 declare const $:any;
