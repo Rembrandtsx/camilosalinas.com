@@ -1,17 +1,16 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TalksService } from '../services/talks.services';
-import { trigger,state,style,transition,animate } from '@angular/animations';
-import { TimeLineComponent } from './timeline/timeline.component';
+import { TimeLineService } from '../../services/timeline.services';
+import { trigger,state,style,transition,animate } from '@angular/animations'
 declare const jQuery:any;
 declare const $:any;
 declare const GitHubCalendar:any;
 
 
 @Component({
-    selector:'about-component',
-    templateUrl:'about.component.html',
-    styleUrls:['about.component.css'],
+    selector:'timeline-component',
+    templateUrl:'timeline.component.html',
+    styleUrls:['timeline.component.css'],
     animations:[
         trigger('enterState',[
           state('void',style({
@@ -28,19 +27,21 @@ declare const GitHubCalendar:any;
         ])
       ]
 })
-export class AboutComponent implements OnInit{
-    
+export class TimeLineComponent implements OnInit{
+    public timelineEvents:any[];
     constructor(
-        
+        private appSettingsService : TimeLineService 
     ) { }
-    ngOnChanges(){
-      
-    }
+
    ngOnInit(){
        /*--------------------*/
        // JSON is Loaded.
        /*--------------------*/
-       
-        GitHubCalendar(".calendar", "Rembrandtsx");
+       this.appSettingsService.getJSON().subscribe(data => {
+            this.timelineEvents= data;
+            console.log(data.lenght)
+            console.log(data)
+        });
     }
+
 }
