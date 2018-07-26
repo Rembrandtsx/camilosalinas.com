@@ -958,7 +958,7 @@
   }
   /* OWN COLORS*/
   
-  
+  /*node green*/
   .card.theme-node-green .card__face__colored-side {
     background: #6cc24a;
   }
@@ -973,11 +973,28 @@
     color: #6cc24a;
   }
   .card.theme-node-green .card__path-big {
-    background: repeating-linear-gradient(#6cc24a, #6cc24a 3px, transparent 3px, transparent 6px);
-    border-color: #6cc24a;
+    background: repeating-linear-gradient(#e34f26, #e34f26 3px, transparent 3px, transparent 6px);
+    border-color: #e34f26;
   }
-  
-  
+  /*html5-orange*/
+  .card.theme-html5-orange .card__face__colored-side {
+    background: #e34f26;
+  }
+  .card.theme-html5-orange .card__face__path {
+    background: repeating-linear-gradient(#e34f26, #e34f26 3px, transparent 3px, transparent 6px);
+    border-color: #e34f26;
+  }
+  .card.theme-html5-orange .card__header {
+    background: #e34f26;
+  }
+  .card.theme-html5-orange .card__sender__rating__star {
+    color: #e34f26;
+  }
+  .card.theme-html5-orange .card__path-big {
+    background: repeating-linear-gradient(#e34f26, #e34f26 3px, transparent 3px, transparent 6px);
+    border-color: #e34f26;
+  }
+  /*js-yellow*/
   .card.theme-js-yellow .card__face__colored-side {
     background: #f7df1e;
   }

@@ -25,6 +25,11 @@
                 "glob": "favicon.ico",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/slides",
+                "output": "/slides"
               }
             ],
             "styles": [
@@ -90,6 +95,11 @@
                 "glob": "favicon.ico",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/slides",
+                "output": "/slides"
               }
             ]
           }
