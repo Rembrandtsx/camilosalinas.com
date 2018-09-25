@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import * as Typed from 'typed.js';
+import Typed from 'typed.js';
 import { trigger,state,style,transition,animate } from '@angular/animations'
 
 @Component({
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
     //Elemento Typed
-    let typed = new Typed('#typed',{
+    let typed:any = new Typed('#typed',{
       strings:["Desarrollador","Estudiante","中文演讲人","Innovador","Monitor", "Ingeniero","Emprendedor", "Inventor"],
       backSpeed: 40,
       typeSpeed: 40,
