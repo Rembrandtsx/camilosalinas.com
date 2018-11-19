@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
     //Elemento Typed
     let typed:any = new Typed('#typed',{
-      strings:["Desarrollador","Estudiante","中文演讲人","Innovador","Monitor", "Ingeniero","Emprendedor", "Inventor"],
+      strings:["Developer","Student","中文演讲人","Creator","Monitor", "Engineer","Entrepeneur", "Inventor", "Student Representative"],
       backSpeed: 40,
       typeSpeed: 40,
       loop: true
