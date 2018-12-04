@@ -143,6 +143,9 @@ h2.f4.text-normal.mb-2 {
 div.float-left a {
     color: #00796B;
 }
+#user-activity-overview{
+    display:none;
+}
 /*Loader*/
 #load {
     width: 100px;
