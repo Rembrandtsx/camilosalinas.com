@@ -13,4 +13,8 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.message = 'Hello';
   }
+  toggle(){
+    let input:any =document.getElementById("menu")
+   input.checked = !input.checked
+  }
 }
