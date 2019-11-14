@@ -1,24 +1,19 @@
 {
-  "name": "ng-universal-demo",
+  "name": "Camilo Salinas Web Page",
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/universal-starter.git"
+    "url": "https://github.com/Rembrandtsx/camilosalinas.me.git"
   },
   "contributors": [
-    "AngularClass <hello@angularclass.com>",
-    "PatrickJS <patrick@angularclass.com>",
-    "Jeff Whelpley <jeff@gethuman.com>",
-    "Jeff Cross <crossj@google.com>",
-    "Mark Pieszak <mpieszak84@gmail.com>",
-    "Jason Jean <jasonjean1993@gmail.com>",
-    "Fabian Wiles <fabian.wiles@gmail.com>"
+    "Camilo Andres Salinas <iam@camilosalinas.me>"
   ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buildprod":"ng build --prod",
     "lint": "ng lint ng-universal-demo",
     "build:client-and-server-bundles": "ng build --prod && ng run ng-universal-demo:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run webpack:server && npm run generate:prerender",
