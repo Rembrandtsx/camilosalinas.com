@@ -17,6 +17,11 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              },
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "/assets"
