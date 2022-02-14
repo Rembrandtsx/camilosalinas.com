@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="music-container">
+      <canvas id="canvas"></canvas>
+      <div id="hero-card" class="disable-pointer">
+        <div class="header-container">
+          <div class="header">My Weird Music Taste</div>
+          <div class="subheader enable-pointer">
+            Welcome to a visual experience based on my musical taste.<br />
+            You can find a Spotify playlist with this tracks
+            <a
+              href="https://open.spotify.com/playlist/2DRwsZl8lg41izTuV4zwzB?si=3d0283194f504842"
+              target="_blank"
+              >Here</a
+            >
+          </div>
+          <div id="intro" class="disable-pointer">
+            <div id="intro-card">
+              <div class="intro-1a">
+                <p class="volume-icon"></p>
+                <p>Loading...</p>
+                <p style="line-height: 1">
+                  Put your headphones and turn up your volume!
+                </p>
+              </div>
+              <div class="intro-1b"></div>
+              <div class="intro-2">
+                <p>
+                  Hold <span class="spacebar">spacebar</span> to load a new
+                  track.
+                </p>
+              </div>
+              <div class="intro-3">
+                <p>Release <span class="spacebar">spacebar</span> to play.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="track-aligner">
+        <div class="track-container">
+          <div class="track-number"></div>
+          <div class="track-name"></div>
+          <div class="track-hyphen">-</div>
+          <div class="track-artist"></div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/three.min.js" defer></script>
+    <script src="bundle.js" defer></script>
+  </body>
+</html>
