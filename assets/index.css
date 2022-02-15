@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  --color-text: #f6f1f1;
+  --color-bg: #0f0e0e;
+  --color-link: #e94b31;
+  --color-text-alt: #999797;
+  --color-link-hover: #fff;
+  --cursor-stroke: #e94b31;
+  --cursor-fill: transparent;
+  --cursor-stroke-width: 1px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: ivymode, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
