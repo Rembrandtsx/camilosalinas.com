@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://use.typekit.net/ldj8uhs.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/splitting/dist/splitting.css"
@@ -13,16 +13,33 @@
       rel="stylesheet"
       href="https://unpkg.com/splitting/dist/splitting-cells.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="assets/index.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-119532863-1"
     ></script>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -32,20 +49,477 @@
 
       gtag("config", "UA-119532863-1");
     </script>
-    <title>Probando</title>
+    <title>Camilo Salinas | Entrepreneur & Developer</title>
   </head>
   <body>
-    <h1>Tetsing</h1>
+    <div class="container">
+      <main>
+        <div class="content">
+          <section class="grid">
+            <div class="grid__item pos-1">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/matrimonio.jpeg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-2">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/Cocora.jpeg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-3">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/nieve1.jpeg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-4">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/fbdevcircles.jpg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-5">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/CEU2.jpeg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-6">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/grad.jpg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-7">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/nieve2.jpeg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-8">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/seneca1.jpg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-9">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/profile1.jpg)"
+              ></div>
+            </div>
+            <div class="grid__item pos-10">
+              <div
+                class="grid__item-img"
+                style="background-image: url(assets/images/Me/speaker.JPG)"
+              ></div>
+            </div>
+          </section>
+          <h2 class="content__title no-select">
+            <span data-splitting>Camilo</span>
+            <span data-splitting class="content__title-sub">Salinas</span>
+          </h2>
+        </div>
+      </main>
+      <section class="spacer"></section>
+      <section class="slides">
+        <div class="slide slide--current">
+          <div class="slide__img-wrap">
+            <div class="break"></div>
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>My</span>
+            <span class="slide__title-inner" data-splitting>Projects</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >Move with the arrows</span
+            >
+          </h2>
+        </div>
+        <!--ACAMICA-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/Acamica/acamica1.jpeg"
+              alt="Acamica 1"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="assets/images/Projects/Acamica/acamica2.jpeg"
+              alt="Acamica 2"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/Acamica/acamica3.jpeg"
+              alt="Acamica 3"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/Acamica/01-Home@2x.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Mentor</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >en</span
+            >
+            <span class="slide__title-inner" data-splitting>Acamcia</span>
+          </h2>
+        </div>
 
-    <a href="audioplayer/index.html">Hi</a>
+        <!--Residia-->
 
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/Residia/logo.png"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="assets/images/Projects/Residia/CHAT-1---instaStory.gif"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/Residia/FAQ-1---instaStory.gif"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/Residia/team.jpeg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Residia</span>
+          </h2>
+        </div>
+
+        <!--Learn To Transit-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/LearnToTransit/lt.png"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="assets/images/Projects/LearnToTransit/diploma.jpeg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/LearnToTransit/LearnToTransit1.jpeg"
+              alt="Some image"
+            />
+            <video
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/LearnToTransit/LearnToTransit.mp4"
+              alt="Some image"
+              autoplay
+              muted
+              loop
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Learn</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >To</span
+            >
+            <span class="slide__title-inner" data-splitting>Transit</span>
+          </h2>
+        </div>
+
+        <!--Recety-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/Recety/Recety.jpeg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/Recety/Screen Shot 2020-08-18 at 10.47.39 PM.png"
+              alt="Some image"
+            />
+            <video
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/Recety/Recety.mp4"
+              alt="Some image"
+              autoplay
+              muted
+              loop
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Recety</span>
+          </h2>
+        </div>
+
+        <!--Minecraft Server-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+
+        <!--Fellowship-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+        <!--GGITApps-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+        <!--GSEA-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+        <!--Maraton De Seguridad-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+        <!--Hackatones-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="img/4.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="img/7.jpg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="img/6.jpg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="img/9.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>They</span>
+            <span
+              class="slide__title-inner slide__title-inner--middle"
+              data-splitting
+              >are</span
+            >
+            <span class="slide__title-inner" data-splitting>Few</span>
+          </h2>
+        </div>
+
+        <button class="slides__nav slides__nav--prev">
+          <svg>
+            <path
+              d="M10.474 0C7.988 4 4.118 7.422 0 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.608-4-5.744-7.379-9.618-10C7.215 7.34 10.474 4 13 0h-2.526zm6 0C13.987 4 10.116 7.422 6 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.606-4-5.745-7.379-9.617-10C13.214 7.34 16.474 4 19 0h-2.526z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+        <button class="slides__nav slides__nav--next">
+          <svg>
+            <path
+              d="M71.526 0C74.012 4 77.882 7.422 82 10c-4.156 2.539-7.865 6-10.474 10h-2.485c2.608-4 5.744-7.379 9.618-10C74.785 7.34 71.526 4 69 0h2.526zm-6 0C68.013 4 71.884 7.422 76 10c-4.156 2.539-7.865 6-10.474 10H63.04c2.606-4 5.745-7.379 9.617-10C68.786 7.34 65.526 4 63 0h2.526z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </section>
+
+      <iframe
+        class="audio-experience"
+        src="./audioplayer/index.html"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <svg class="cursor" width="60" height="60" viewBox="0 0 60 60">
+      <circle class="cursor__inner" cx="30" cy="30" r="15" />
+    </svg>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <script src="lib/utils.js"></script>
+    <script src="lib/cursor.js"></script>
+    <script src="lib/index.js"></script>
   </body>
 </html>
