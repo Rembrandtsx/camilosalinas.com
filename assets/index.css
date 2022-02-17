@@ -78,7 +78,7 @@ a:focus:not(:focus-visible) {
 .js .loading::after {
   content: "";
   position: fixed;
-  z-index: 1000;
+  z-index: 1000000;
 }
 
 .js .loading::before {
@@ -768,6 +768,14 @@ footer.footer {
 
 .footer .content-title {
   width: 60%;
+}
+
+.footer__contact h4 {
+  margin: 0;
+}
+.footer__contact ul {
+  margin: 1em 0 0 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 53em) {
