@@ -739,6 +739,37 @@ h2.content-title {
 .cursor {
   display: none;
 }
+
+.academia {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.academia h2 {
+  margin-bottom: 1em;
+}
+.academia__item {
+  margin-top: 2em;
+  width: 50%;
+}
+.academia__item-title {
+  margin: 0;
+}
+.academia__item-dates {
+  margin: 0;
+}
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw 10vh 5vw;
+}
+
+.footer .content-title {
+  width: 60%;
+}
+
 @media screen and (min-width: 53em) {
   .slides {
     padding: 0;
