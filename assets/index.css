@@ -391,11 +391,11 @@ h2.content-title {
   margin: 1.5rem 0;
 }
 
-.content__text img {
-  max-width: 50%;
+.content__text img,
+.content__text video {
+  max-width: 70%;
   margin: 5rem auto;
   display: block;
-  border-radius: 50%;
 }
 
 .content__back {
