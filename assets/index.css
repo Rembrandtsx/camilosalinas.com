@@ -764,6 +764,9 @@ footer.footer {
   display: flex;
   justify-content: space-between;
   padding: 0 5vw 10vh 5vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
 }
 
 .footer .content-title {
@@ -793,6 +796,9 @@ footer.footer {
 
   .slides__nav--next:hover {
     transform: translate3d(15%, 0, 0);
+  }
+  footer.footer {
+    flex-direction: row;
   }
 }
 
