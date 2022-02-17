@@ -35,3 +35,4 @@ Cosas por hacer:
 - Investigar como evitar que Three JS en la sección de canciones no haga e.preventDefault(), Causando errores en la consola al hacer scroll sobre esta sección
 - Refinar el contenido
 - Editar los audios de la experiencia visual para que estos no tengan las intros de los videos de donde salieron (o quizá conectarlos directamente al API de spotify)
+- Poder mutear las canciones una vez desplegadas JAJAJAJAJA
