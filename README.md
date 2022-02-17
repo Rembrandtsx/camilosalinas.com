@@ -36,3 +36,13 @@ Cosas por hacer:
 - Refinar el contenido
 - Editar los audios de la experiencia visual para que estos no tengan las intros de los videos de donde salieron (o quizá conectarlos directamente al API de spotify)
 - Poder mutear las canciones una vez desplegadas JAJAJAJAJA
+
+La arquitectura del sitio esta hecha de tal manera:
+
+- Dominio proveido por Namecheap
+- DNS servidos por CloudFlare
+- El Sitio esta siendo servido por Netlify
+- Tambien está siendo continuamente desplegado por Netlify cada vez que hay un push sobre la rama master
+- El codigo está en github
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed034a0f-e8ce-457e-8fe1-aa412317864e/deploy-status)](https://app.netlify.com/sites/thirsty-chandrasekhar-200788/deploys)
