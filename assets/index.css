@@ -135,7 +135,7 @@ main {
   font-size: 1.5em;
   letter-spacing: 0.1rem;
   line-height: 2rem;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
