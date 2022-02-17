@@ -5,19 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/ldj8uhs.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/splitting/dist/splitting.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/splitting/dist/splitting-cells.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
     <link rel="stylesheet" href="assets/index.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-119532863-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119532863-1"></script>
     <script>
       document.documentElement.className = "js";
       var supportsCssVars = function () {
@@ -36,9 +27,7 @@
         );
       };
       supportsCssVars() ||
-        alert(
-          "Please view this demo in a modern browser that supports CSS Variables."
-        );
+        alert("Please view this demo in a modern browser that supports CSS Variables.");
     </script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -51,10 +40,23 @@
     </script>
     <title>Camilo Salinas | Entrepreneur & Developer</title>
   </head>
-  <body>
+  <body class="loading">
     <div class="container">
+      <div class="menu">
+				<div class="menu__inner">
+					<div class="menu__links">
+						<a href="#banner" >Home</a>
+            <a href="#about" >About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="#likes">Hobbies & Likes</a>
+            <a href="#academia">Academia</a>
+            <a href="#footer">Footer</a>
+					</div>
+				</div>
+			</div>
       <main>
-        <div class="content">
+        <div class="main-content" id="banner">
           <section class="grid">
             <div class="grid__item pos-1">
               <div
@@ -124,19 +126,352 @@
         </div>
       </main>
       <section class="spacer"></section>
-      <section class="slides">
+
+      <!--About me-->
+      <section class="about" id="about">
+        <h2 class="content-title">
+         About me
+        </h2>
+        <p>
+          I am Camilo Salinas, I am 21 years old and I am a seventh-semester student of computer and systems engineering at the Universidad de los Andes. I have been an entrepreneur since I was very young, which is why I was recognized by the Entrepreneurs Organization as the best entrepreneurial student in Colombia for the year 2021, and the 3rd best entrepreneurial student in the world. During my life I have played different leadership roles.
+        </p>
+<p class="goal">
+  My goal in life is to unite people, I recognize the power and value of creating communities, since it is in consolidated communities where knowledge can be created to strengthen support networks and develop initiatives that favor them. I am a passionate and results-oriented person, I lead work teams, persuade people and overcome obstacles and I love facing the different challenges that arise during my entrepreneurship.
+</p>
+       
+      </section>
+
+      <!--Featured Projects-->
+      <h2 class="content-title" id="projects">
+        Businesses, Projects, and Startups
+      </h2>
+      <section class="items" >
+        <article class="item item--invert">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/Eco2Wallet/Eco2Wallet.png)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>Eco2Wallet</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>Tech Directoor</span></span>
+						<span class="item__meta-row"><span>Jan 2022 &mdash; Present</span></span>
+					</div>
+					<div class="item__excerpt">
+						<p>
+              We are a green digital wallet with a debit card that plants trees and seagrass to compensate for the environmental impact of  your daily purchases. Let's transform each taxi, coffee, etc, into trees in the Amazon with eco2wallet!
+              Money doesn't grow on trees, but your money in eco2wallet will make trees grow!</p>
+						<a class="item__excerpt-link" href="#eco2wallet"><span>Read more</span></a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/Residia/Modulos.jpeg)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>Residia</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>CEO & Co-founder</span></span>
+						<span class="item__meta-row"><span>Mar 2019 &mdash; Present</span></span>
+					</div>
+					<div class="item__excerpt">
+						<p>Residia is a multiplatform application that empowers and promotes the comunication and integration in the community of residential complexes, improving quality of services, and easing the managment of multiple complexes and building upon community.</p>
+						<a class="item__excerpt-link" href="#residia"><span>Read more</span></a>
+					</div>
+				</article>
+				<article class="item item--invert">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/Recety/Screen\ Shot\ 2020-08-18\ at\ 10.46.41\ PM.png)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>Recety</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>CEO & Co-founder</span></span>
+						<span class="item__meta-row"><span>Aug 2020 &mdash; Dec 2020</span></span>
+					</div>
+					<div class="item__excerpt">
+						<p>The recipe creation and consumption community where you can discover, create and support your favorite creators.</p>
+						<a class="item__excerpt-link" href="#recety"><span>Read more</span></a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/LearnToTransit/Screenshot.png)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>LearnToTransit</span>
+						<span data-splitting>Project</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>Creator</span></span>
+						<span class="item__meta-row"><span>Jan 2017 &mdash; Jun 2017</span></span>
+					</div>
+					<div class="item__excerpt">
+						<p>Project developed for "Expoandes" at university to help people learn transit rules didactically. Currently available for download in Google's Play Store.</p>
+						<a class="item__excerpt-link" href="#learntotransit"><span>Read more</span></a>
+					</div>
+				</article>
+				<article class="item item--invert">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/GGITApps/Screen\ Shot\ 2022-02-17\ at\ 1.58.30\ AM.png)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>GGITApps</span>
+						<span data-splitting>Website dev Business</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>Co-founder & Director</span>
+						<span class="item__meta-row"><span>Dec 2016 &mdash; Jan 2019</span>
+					</div>
+					<div class="item__excerpt">
+						<p>Website and App development company I founded when I graduated school, taking advantage of my self-taught coding skills having important clients such as: McDonalds, Siemon, Minesa, Etc... </p>
+						<a class="item__excerpt-link" href="#ggitapps"><span>Read more</span></a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="item__imgwrap">
+						<div class="item__img" style="background-image:url(assets/images/Projects/Minecraft/BosyZh8IcAErDBy.png)"></div>
+					</div>
+					<button class="item__enter unbutton">
+						<svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800" viewBox="0 0 800 800">
+							<circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150"/>
+						</svg>
+					</button>
+					<h2 class="heading heading--item">
+						<span data-splitting>Minespreack</span>
+						<span data-splitting>Minecraft Server</span>
+					</h2>
+					<div class="item__meta">
+						<span class="item__meta-row"><span>Admin & Creator</span></span>
+						<span class="item__meta-row"><span>Jan 2013 &mdash; Jun 2016</span></span>
+					</div>
+					<div class="item__excerpt">
+						<p>My first business and important project in life was minespreack, a minecraft server which became the 3rd largest in LATAM and the 1st largest in Colombia, with more than 100.000 registered users.</p>
+						<a class="item__excerpt-link" href="#minespreack"><span>Read more</span></a>
+					</div>
+				</article>
+	
+			</section>
+			<section class="content">
+				<article class="content__article" id="eco2wallet">
+					<h2 class="heading">
+						<span data-splitting>Eco2Wallet</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="content__text">
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. </p>
+						<p>These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's; so apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/1.jpg" alt="Some image"/>
+						<p>And thus ye have the inventors and the original of book-licensing ripped up and drawn as lineally as any pedigree. We have it not, that can be heard of, from any ancient state, or polity or church; nor by any statute left us by our ancestors elder or later; nor from the modern custom of any reformed city or church abroad, but from the most anti-christian council and the most tyrannous inquisition that ever inquired.</p><p> Till then books were ever as freely admitted into the world as any other birth; the issue of the brain was no more stifled than the issue of the womb: no envious Juno sat cross-legged over the nativity of any man's intellectual offspring; but if it proved a monster, who denies, but that it was justly burnt, or sunk into the sea? </p><p>But that a book, in worse condition than a peccant soul, should be to stand before a jury ere it be born to the world, and undergo yet in darkness the judgment of Radamanth and his colleagues, ere it can pass the ferry backward into light, was never heard before, till that mysterious iniquity, provoked and troubled at the first entrance of Reformation, sought out new limbos and new hells wherein they might include our books also within the number of their damned. And this was the rare morsel so officiously snatched up, and so ill-favouredly imitated by our inquisiturient bishops, and the attendant minorites their chaplains. That ye like not now these most certain authors of this licensing order, and that all sinister intention was far distant from your thoughts, when ye were importuned the passing it, all men who know the integrity of your actions, and how ye honour truth, will clear ye readily.</p>
+					</div>
+				</article>
+				<article class="content__article content__article--invert" id="residia">
+					<h2 class="heading">
+						<span data-splitting>Residia</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="content__text">
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's. </p><p>So apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/2.jpg" alt="Some image"/>
+						<p>They are not skilful considerers of human things, who imagine to remove sin by removing the matter of sin; for, besides that it is a huge heap increasing under the very act of diminishing, though some part of it may for a time be withdrawn from some persons, it cannot from all, in such a universal thing as books are; and when this is done, yet the sin remains entire. Though ye take from a covetous man all his treasure, he has yet one jewel left, ye cannot bereave him of his covetousness.</p><p> Banish all objects of lust, shut up all youth into the severest discipline that can be exercised in any hermitage, ye cannot make them chaste, that came not hither so; such great care and wisdom is required to the right managing of this point. Suppose we could expel sin by this means; look how much we thus expel of sin, so much we expel of virtue: for the matter of them both is the same; remove that, and ye remove them both alike.</p>
+					</div>
+				</article>
+				<article class="content__article" id="recety">
+					<h2 class="heading">
+						<span data-splitting>Recety</span>
+						<span data-splitting>Startup</span>
+					</h2>
+					<div class="content__text">
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made.</p><p> And besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's; so apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/3.jpg" alt="Some image"/>
+						<p>Nay, which is more lamentable, if the work of any deceased author, though never so famous in his lifetime and even to this day, come to their hands for licence to be printed, or reprinted, if there be found in his book one sentence of a venturous edge, uttered in the height of zeal (and who knows whether it might not be the dictate of a divine spirit?). </p><p>Yet not suiting with every low decrepit humour of their own, though it were Knox himself, the reformer of a kingdom, that spake it, they will not pardon him their dash: the sense of that great man shall to all posterity be lost, for the fearfulness or the presumptuous rashness of a perfunctory licenser. And to what an author this violence hath been lately done, and in what book of greatest consequence to be faithfully published, I could now instance, but shall forbear till a more convenient season.</p>
+					</div>
+				</article>
+				<article class="content__article content__article--invert" id="learntotransit">
+					<h2 class="heading">
+						<span data-splitting>LearnToTransit</span>
+						<span data-splitting>Project</span>
+					</h2>
+					<div class="content__text">	
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's. </p><p>So apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/4.jpg" alt="Some image"/>
+						<p>And it is a particular disesteem of every knowing person alive, and most injurious to the written labours and monuments of the dead, so to me it seems an undervaluing and vilifying of the whole nation. I cannot set so light by all the invention, the art, the wit, the grave and solid judgment which is in England, as that it can be comprehended in any twenty capacities how good soever, much less that it should not pass except their superintendence be over it, except it be sifted and strained with their strainers, that it should be uncurrent without their manual stamp. </p><p>Truth and understanding are not such wares as to be monopolized and traded in by tickets and statutes and standards. We must not think to make a staple commodity of all the knowledge in the land, to mark and licence it like our broadcloth and our woolpacks. What is it but a servitude like that imposed by the Philistines, not to be allowed the sharpening of our own axes and coulters, but we must repair from all quarters to twenty licensing forges? </p><p>Had anyone written and divulged erroneous things and scandalous to honest life, misusing and forfeiting the esteem had of his reason among men, if after conviction this only censure were adjudged him that he should never henceforth write but what were first examined by an appointed officer, whose hand should be annexed to pass his credit for him that now he might be safely read; it could not be apprehended less than a disgraceful punishment. Whence to include the whole nation, and those that never yet thus offended, under such a diffident and suspectful prohibition, may plainly be understood what a disparagement it is. So much the more, whenas debtors and delinquents may walk abroad without a keeper, but unoffensive books must not stir forth without a visible jailer in their title.</p>
+					</div>
+				</article>
+				<article class="content__article " id="ggitapps">
+					<h2 class="heading">
+						<span data-splitting>GGITApps</span>
+						<span data-splitting>Website dev Business</span>
+					</h2>
+					<div class="content__text">
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's. </p><p>So apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/5.jpg" alt="Some image"/>
+						<p>And in conclusion it reflects to the disrepute of our ministers also, of whose labours we should hope better, and of the proficiency which their flock reaps by them, than that after all this light of the Gospel which is, and is to be, and all this continual preaching, they should still be frequented with such an unprincipled, unedified and laic rabble, as that the whiff of every new pamphlet should stagger them out of their catechism and Christian walking. </p><p>This may have much reason to discourage the ministers when such a low conceit is had of all their exhortations, and the benefiting of their hearers, as that they are not thought fit to be turned loose to three sheets of paper without a licenser; that all the sermons, all the lectures preached, printed, vented in such numbers, and such volumes, as have now well nigh made all other books unsaleable, should not be armour enough against one single Enchiridion, without the castle of St. Angelo of an Imprimatur.</p>
+					</div>
+				</article>
+				<article class="content__article content__article--invert" id="minespreack">
+					<h2 class="heading">
+						<span data-splitting>Minespreack</span>
+						<span data-splitting>Minecraft Server</span>
+					</h2>
+					<div class="content__text">
+						<p>Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one title-page, complimenting and ducking each to other with their shaven reverences, whether the author, who stands by in perplexity at the foot of his epistle, shall to the press or to the sponge. These are the pretty responsories, these are the dear antiphonies, that so bewitched of late our prelates and their chaplains with the goodly echo they made; and besotted us to the gay imitation of a lordly Imprimatur, one from Lambeth House, another from the west end of Paul's.</p><p> So apishly Romanizing, that the word of command still was set down in Latin; as if the learned grammatical pen that wrote it would cast no ink without Latin; or perhaps, as they thought, because no vulgar tongue was worthy to express the pure conceit of an Imprimatur, but rather, as I hope, for that our English, the language of men ever famous and foremost in the achievements of liberty, will not easily find servile letters enow to spell such a dictatory presumption English.</p>
+						<img src="img/6.jpg" alt="Some image"/>
+						<p>Next, what more national corruption, for which England hears ill abroad, than household gluttony: who shall be the rectors of our daily rioting? And what shall be done to inhibit the multitudes that frequent those houses where drunkenness is sold and harboured? Our garments also should be referred to the licensing of some more sober workmasters to see them cut into a less wanton garb. </p><p>Who shall regulate all the mixed conversation of our youth, male and female together, as is the fashion of this country? Who shall still appoint what shall be discoursed, what presumed, and no further? Lastly, who shall forbid and separate all idle resort, all evil company? These things will be, and must be; but how they shall be least hurtful, how least enticing, herein consists the grave and governing wisdom of a state.</p>
+					</div>
+				</article>
+				<button class="content__back unbutton">
+					<svg><path d="M82 10H9" stroke="#fff" stroke-width="2"/><path d="M10.474 0C7.988 4 4.118 7.422 0 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.608-4-5.744-7.379-9.618-10C7.215 7.34 10.474 4 13 0h-2.526zm6 0C13.987 4 10.116 7.422 6 10c4.156 2.539 7.865 6 10.474 10h2.485c-2.606-4-5.745-7.379-9.617-10C13.214 7.34 16.474 4 19 0h-2.526z" fill="#fff"/></svg>
+				</button>
+			</section>
+
+      <section class="spacer"></section>
+
+
+            <!--Awards and Experience-->
+      <section class="slides" id="awards">
         <div class="slide slide--current">
           <div class="slide__img-wrap">
             <div class="break"></div>
           </div>
           <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>My</span>
-            <span class="slide__title-inner" data-splitting>Projects</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >Move with the arrows</span
+            <span class="slide__title-inner" data-splitting>Awards</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting> and </span>
+            <span class="slide__title-inner" data-splitting>Experience</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>
+              Move with the arrows
+            </span>
+          </h2>
+        </div>
+        <!--GSEA Global-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/GSEA/GSEA1.jpeg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--2"
+              src="assets/images/Projects/GSEA/GSEA2.jpeg"
+              alt="Some image"
+            />
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/GSEA/GSEA3.JPG"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/GSEA/182083482_311874463835707_1428158974539628495_n.jpeg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>3rd </span>
+            <span class="slide__title-inner" data-splitting>World</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>
+              Best Student Entrepreneur
+            </span>
+            <span class="slide__title-inner" data-splitting>2021</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >By
+              <a href="https://gsea.org/gsea/gsea/profile.aspx?id=371577&ordinal=57"
+                >Entrepreneurs Organization</a
+              >
+            </span>
+          </h2>
+        </div>
+        <!--GSEA Colombia-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/GSEA/WhatsApp Image 2021-01-28 at 6.02.59 PM.jpeg"
+              alt="Some image"
+            />
+
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/GSEA/151070035_3715536891867521_6737781672471853444_n.jpeg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Colombian </span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>
+              Best Student Entrepreneur
+            </span>
+            <span class="slide__title-inner" data-splitting>2021</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >By
+              <a href="https://www.eonetwork.org/bogota/upcoming-events"> EO Colombia </a>
+            </span>
+          </h2>
+        </div>
+        <!--Fellowship-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/Fellowship/Fellowship1.jpeg"
+              alt="Some image"
+            />
+
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/Fellowship/Fellowship3.jpeg"
+              alt="Some image"
+            />
+            <img
+              class="slide__img slide__img--4"
+              src="assets/images/Projects/Fellowship/Fellowship6.png"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>START</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >Fellowship</span
             >
+            <span class="slide__title-inner" data-splitting>Batch 1</span>
+
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              ><a href="https://startfellowship.ch"> www.startfellowship.ch </a>
+            </span>
           </h2>
         </div>
         <!--ACAMICA-->
@@ -166,46 +501,97 @@
           </div>
           <h2 class="slide__title">
             <span class="slide__title-inner" data-splitting>Mentor</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >en</span
-            >
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>at</span>
             <span class="slide__title-inner" data-splitting>Acamcia</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              ><a href="https://www.acamica.com/">www.acamica.com </a>
+            </span>
           </h2>
         </div>
 
-        <!--Residia-->
-
+        <!--CEU-->
         <div class="slide">
           <div class="slide__img-wrap">
             <img
               class="slide__img slide__img--1"
-              src="assets/images/Projects/Residia/logo.png"
-              alt="Some image"
+              src="assets/images/Projects/CEU/CEU2.jpeg"
+              alt="Acamica 1"
             />
-            <img
-              class="slide__img slide__img--2"
-              src="assets/images/Projects/Residia/CHAT-1---instaStory.gif"
-              alt="Some image"
-            />
+
             <div class="break"></div>
             <img
               class="slide__img slide__img--3"
-              src="assets/images/Projects/Residia/FAQ-1---instaStory.gif"
+              src="assets/images/Projects/CEU/seneca1.jpg"
               alt="Some image"
             />
             <img
               class="slide__img slide__img--4"
-              src="assets/images/Projects/Residia/team.jpeg"
+              src="assets/images/Projects/CEU/CEU3.jpg"
               alt="Some image"
             />
           </div>
           <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>Residia</span>
+            <span class="slide__title-inner" data-splitting>STUDENT</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >Representative Systems & Computer Engineering</span
+            >
+            <span class="slide__title-inner" data-splitting>Faculty 2019</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              ><a
+                href="https://sistemas.uniandes.edu.co/es/nuestra-gente/estudiantes/representante#"
+                >Uniandes ISYC Website
+              </a>
+            </span>
+          </h2>
+        </div>
+        <!--Hackatones-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/HackatonCarvajal/Team.jpeg"
+              alt="Some image"
+            />
+
+            <div class="break"></div>
+            <img
+              class="slide__img slide__img--3"
+              src="assets/images/Projects/HackatonCarvajal/WhatsApp Image 2021-01-26 at 3.39.13 PM.jpeg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>Winner</span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >Hackathon Carvajal
+            </span>
+            <span class="slide__title-inner" data-splitting> Uniandes 2019 </span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>
+              <a
+                href="https://sistemas.uniandes.edu.co/es/inicio/noticias/item/1148-hackaton-carvajal-uniandes-2019"
+                >See the post here</a
+              >
+            </span>
           </h2>
         </div>
 
+        <!--Maraton De Seguridad-->
+        <div class="slide">
+          <div class="slide__img-wrap">
+            <img
+              class="slide__img slide__img--1"
+              src="assets/images/Projects/MaratonSeguridad/mseguridad.jpg"
+              alt="Some image"
+            />
+          </div>
+          <h2 class="slide__title">
+            <span class="slide__title-inner" data-splitting>3rd Place </span>
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >Security Marathon</span
+            >
+            <span class="slide__title-inner" data-splitting>Uniandes 2017</span>
+          </h2>
+        </div>
         <!--Learn To Transit-->
         <div class="slide">
           <div class="slide__img-wrap">
@@ -237,252 +623,11 @@
           </div>
           <h2 class="slide__title">
             <span class="slide__title-inner" data-splitting>Learn</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >To</span
-            >
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting>To</span>
             <span class="slide__title-inner" data-splitting>Transit</span>
-          </h2>
-        </div>
-
-        <!--Recety-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="assets/images/Projects/Recety/Recety.jpeg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="assets/images/Projects/Recety/Screen Shot 2020-08-18 at 10.47.39 PM.png"
-              alt="Some image"
-            />
-            <video
-              class="slide__img slide__img--4"
-              src="assets/images/Projects/Recety/Recety.mp4"
-              alt="Some image"
-              autoplay
-              muted
-              loop
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>Recety</span>
-          </h2>
-        </div>
-
-        <!--Minecraft Server-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
+            <span class="slide__title-inner slide__title-inner--middle" data-splitting
+              >Outstanding Engineering Project</span
             >
-            <span class="slide__title-inner" data-splitting>Few</span>
-          </h2>
-        </div>
-
-        <!--Fellowship-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
-            >
-            <span class="slide__title-inner" data-splitting>Few</span>
-          </h2>
-        </div>
-        <!--GGITApps-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
-            >
-            <span class="slide__title-inner" data-splitting>Few</span>
-          </h2>
-        </div>
-        <!--GSEA-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
-            >
-            <span class="slide__title-inner" data-splitting>Few</span>
-          </h2>
-        </div>
-        <!--Maraton De Seguridad-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
-            >
-            <span class="slide__title-inner" data-splitting>Few</span>
-          </h2>
-        </div>
-        <!--Hackatones-->
-        <div class="slide">
-          <div class="slide__img-wrap">
-            <img
-              class="slide__img slide__img--1"
-              src="img/4.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--2"
-              src="img/7.jpg"
-              alt="Some image"
-            />
-            <div class="break"></div>
-            <img
-              class="slide__img slide__img--3"
-              src="img/6.jpg"
-              alt="Some image"
-            />
-            <img
-              class="slide__img slide__img--4"
-              src="img/9.jpg"
-              alt="Some image"
-            />
-          </div>
-          <h2 class="slide__title">
-            <span class="slide__title-inner" data-splitting>They</span>
-            <span
-              class="slide__title-inner slide__title-inner--middle"
-              data-splitting
-              >are</span
-            >
-            <span class="slide__title-inner" data-splitting>Few</span>
           </h2>
         </div>
 
@@ -504,11 +649,7 @@
         </button>
       </section>
 
-      <iframe
-        class="audio-experience"
-        src="./audioplayer/index.html"
-        frameborder="0"
-      ></iframe>
+      <iframe class="audio-experience" src="./audioplayer/index.html" frameborder="0" id="likes"></iframe>
     </div>
 
     <svg class="cursor" width="60" height="60" viewBox="0 0 60 60">
