@@ -108,7 +108,7 @@
 I am Camilo Salinas, a Systems and Computing Engineer who graduated from Universidad de los Andes in February 2024. As a Senior Front-End Engineer at Blankfactor, I build scalable cloud-based solutions for public safety services like 911 emergency systems. I’ve worked in Fintech and Proptech startups, leading engineering teams and building products from the ground up. My entrepreneurial experience includes co-founding Eskombros, a sustainable waste management solution for construction SMEs that integrated AI-driven logistics and optimization systems, processing over 1,600 cubic meters of waste. I also won Colombia's first Generative AI Hackathon in 2023 with a developer testing automation plugin. With expertise in React, Node.js, TypeScript, and leadership, I bring a mix of technical excellence and business-driven problem-solving to every challenge.
       </p>
       <p class="goal">
-        I am the kind of engineer you can rely on to get things done. I combine a deep technical background with an entrepreneurial mindset—focusing on business outcomes, understanding underlying problems, and delivering excellent results without getting stuck in perfectionism. I take ownership, prioritize impact, and make things happen.
+        I am the kind of engineer you can rely on to <b>GET SHIT DONE</b>. I combine a deep technical background with an entrepreneurial mindset—focusing on business outcomes, understanding underlying problems, and delivering excellent results without getting stuck in perfectionism. I take ownership, prioritize impact, and make things happen.
       </p>
 
     </section>
@@ -118,7 +118,30 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       Businesses, Projects, and Startups
     </h2>
     <section class="items">
-     <!-- <article class="item item--invert">
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image:url(assets/images/Projects/Testbuddy/3.png)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800"
+            viewBox="0 0 800 800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting>TestBuddy</span>
+          <span data-splitting>Project</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>Hackathon Winner</span></span>
+          <span class="item__meta-row"><span>Oct 2023</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>TestBuddy is a VS Code extension that automates unit test creation using GPT-3.5, saving developers time and effort.</p>
+          <a class="item__excerpt-link" href="#testbuddy"><span>Read more</span></a>
+        </div>
+      </article>
+     <article class="item item--invert">
         <div class="item__imgwrap">
           <div class="item__img" style="background-image:url(assets/images/Projects/Eco2Wallet/Eco2Wallet.png)"></div>
         </div>
@@ -134,7 +157,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
         </h2>
         <div class="item__meta">
           <span class="item__meta-row"><span>Tech Directoor</span></span>
-          <span class="item__meta-row"><span>Jan 2022 &mdash; Present</span></span>
+          <span class="item__meta-row"><span>Jan 2022 &mdash; Jun 2022</span></span>
         </div>
         <div class="item__excerpt">
           <p>
@@ -144,7 +167,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
             Money doesn't grow on trees, but your money in eco2wallet will make trees grow!</p>
           <a class="item__excerpt-link" href="#eco2wallet"><span>Read more</span></a>
         </div>
-      </article> -->
+      </article>
       <article class="item">
         <div class="item__imgwrap">
           <div class="item__img" style="background-image:url(assets/images/Projects/Residia/Modulos.jpeg)"></div>
@@ -161,7 +184,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
         </h2>
         <div class="item__meta">
           <span class="item__meta-row"><span>CEO & Co-founder</span></span>
-          <span class="item__meta-row"><span>Mar 2019 &mdash; Present</span></span>
+          <span class="item__meta-row"><span>Mar 2019 &mdash; Dec 2021</span></span>
         </div>
         <div class="item__excerpt">
           <p>Residia is a multiplatform application that empowers and promotes the comunication and integration in the
@@ -275,6 +298,43 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
 
     </section>
     <section class="content">
+      <article class="content__article content__article--invert" id="testbuddy">
+        <h2 class="heading">
+          <span data-splitting>TestBuddy</span>
+          <span data-splitting>Project</span>
+        </h2>
+        <div class="content__text">
+          <img src="assets/images/Projects/Testbuddy/icon-1.gif" alt="Some image" />
+          <p>TestBuddy is an innovative Visual Studio Code extension designed to automate the process of unit testing in software development. By leveraging natural language processing with GPT-3.5-turbo-16k, TestBuddy generates, regenerates, and modifies unit tests based on user inputs, improving testing efficiency and reducing developer frustration. The tool seamlessly integrates into existing workflows, providing intelligent suggestions to address errors while enhancing code quality. It simplifies unit test creation, allowing developers to focus more on coding rather than repetitive testing tasks.</p>
+          <ul>
+            <li><strong>Purpose</strong>: Automates the creation, regeneration, and modification of unit tests.</li>
+            <li><strong>Integration</strong>: Designed as an extension for <em>Visual Studio Code</em>, ensuring seamless integration into developers' workflows.</li>
+            <li><strong>Technology</strong>: Utilizes <em>GPT-3.5-turbo-16k</em> to generate unit tests using natural language processing.</li>
+            <li><strong>User Input</strong>: Allows developers to modify or regenerate specific tests based on comments or errors.</li>
+            <li><strong>Back-End</strong>: Built with <em>Node.js</em> following the <em>MVC design pattern</em> for scalability.</li>
+            <li><strong>Endpoints</strong>: Provides various API routes like generating unit tests, regenerating single tests, and offering feedback on failed tests.</li>
+            <li><strong>Database</strong>: Uses <em>Azure SQL Database</em> to store data and support future analytics on user behavior.</li>
+            <li><strong>Deployment</strong>: Hosted on <em>Azure App Service</em> with continuous integration using <em>GitHub Actions</em>.</li>
+            <li><strong>Beta Testing</strong>: Tested with experienced developers to validate usability, effectiveness, and feedback.</li>
+            <li><strong>Focus</strong>: Improves developer efficiency by automating tedious testing tasks while ensuring early detection of errors.</li>
+            <li><strong>Scalability</strong>: Designed for long-term growth with a modular and well-structured back-end architecture.</li>
+            <li><strong>UI</strong>: Built with <em>JavaScript</em>, offering an intuitive and user-friendly interface.</li>
+            <li><strong>Cost Savings</strong>: Reduces the time and resources spent on manual unit test creation.</li>
+            <li><strong>Error Feedback</strong>: Provides intelligent suggestions when tests fail, assisting developers with debugging.</li>
+          </ul>
+          
+          <img src="assets/images/Projects/Testbuddy/1.png" alt="Some image" />
+          <img src="assets/images/Projects/Testbuddy/2.png" alt="Some image" />
+          <img src="assets/images/Projects/Testbuddy/3.png" alt="Some image" />
+          <img src="assets/images/Projects/Testbuddy/4.png" alt="Some image" />
+          <img src="assets/images/Projects/Testbuddy/5.png" alt="Some image" />
+          <img src="assets/images/Projects/Testbuddy/6.png" alt="Some image" />
+          
+
+
+        </div>
+      </article>
+
       <article class="content__article" id="eco2wallet">
         <h2 class="heading">
           <span data-splitting>Eco2Wallet</span>
