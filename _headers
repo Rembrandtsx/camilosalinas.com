@@ -1,0 +1,13 @@
+# Generated images have content hashes; changed images receive new URLs.
+/assets/optimized/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Revalidate HTML, scripts, and styles so deployments do not leave stale code.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/lib/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/index.css
+  Cache-Control: public, max-age=0, must-revalidate

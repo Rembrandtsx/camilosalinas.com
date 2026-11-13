@@ -1,0 +1,222 @@
+{
+  "live-mobile-before": {
+    "url": "https://www.camilosalinas.com/",
+    "fetchTime": "2026-11-12T22:42:03.254Z",
+    "lighthouseVersion": "12.8.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "score": 40,
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 15007.436080000003,
+        "display": "15.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 15007.436080000003,
+        "display": "15.0 s"
+      },
+      "speed-index": {
+        "value": 42501.72904135741,
+        "display": "42.5 s"
+      },
+      "total-blocking-time": {
+        "value": 591,
+        "display": "590 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.001345891952781347,
+        "display": "0.001"
+      },
+      "total-byte-weight": {
+        "value": 41191765,
+        "display": "Total size was 40,226 KiB"
+      }
+    },
+    "warnings": []
+  },
+  "local-mobile-before": {
+    "url": "http://127.0.0.1:4173/",
+    "fetchTime": "2026-11-12T22:43:11.563Z",
+    "lighthouseVersion": "12.8.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "score": 51,
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 4189.7585,
+        "display": "4.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 38489.4867,
+        "display": "38.5 s"
+      },
+      "speed-index": {
+        "value": 46639.28204372894,
+        "display": "46.6 s"
+      },
+      "total-blocking-time": {
+        "value": 292,
+        "display": "290 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 44014709,
+        "display": "Total size was 42,983 KiB"
+      }
+    },
+    "warnings": []
+  },
+  "local-desktop-before": {
+    "url": "http://127.0.0.1:4173/",
+    "fetchTime": "2026-11-12T22:43:32.394Z",
+    "lighthouseVersion": "12.8.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "formFactor": "desktop",
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "score": 64,
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 880.9303,
+        "display": "0.9 s"
+      },
+      "largest-contentful-paint": {
+        "value": 20046.566999999995,
+        "display": "20.0 s"
+      },
+      "speed-index": {
+        "value": 7021.994651148303,
+        "display": "7.0 s"
+      },
+      "total-blocking-time": {
+        "value": 46,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0005793538219070134,
+        "display": "0.001"
+      },
+      "total-byte-weight": {
+        "value": 44013242,
+        "display": "Total size was 42,982 KiB"
+      }
+    },
+    "warnings": []
+  },
+  "local-mobile-after": {
+    "url": "http://127.0.0.1:4174/",
+    "fetchTime": "2026-11-12T22:56:02.802Z",
+    "lighthouseVersion": "12.8.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "score": 78,
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 2565.45565,
+        "display": "2.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 4938.521250000001,
+        "display": "4.9 s"
+      },
+      "speed-index": {
+        "value": 2565.45565,
+        "display": "2.6 s"
+      },
+      "total-blocking-time": {
+        "value": 54,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 630029,
+        "display": "Total size was 615 KiB"
+      }
+    },
+    "warnings": []
+  },
+  "local-desktop-after": {
+    "url": "http://127.0.0.1:4174/",
+    "fetchTime": "2026-11-12T22:56:14.342Z",
+    "lighthouseVersion": "12.8.2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "formFactor": "desktop",
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "score": 97,
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 780.6946641448242,
+        "display": "0.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1091.992913204925,
+        "display": "1.1 s"
+      },
+      "speed-index": {
+        "value": 780.6946641448242,
+        "display": "0.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.000167876171088346,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 988860,
+        "display": "Total size was 966 KiB"
+      }
+    },
+    "warnings": []
+  }
+}

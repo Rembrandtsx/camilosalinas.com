@@ -5,30 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+  <link rel="preconnect" href="https://p.typekit.net" />
   <link rel="stylesheet" href="https://use.typekit.net/ldj8uhs.css" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <link rel="stylesheet" href="assets/vendor/splitting-1.1.0.css" />
   <link rel="stylesheet" href="assets/index.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119532863-1"></script>
   <script>
     document.documentElement.className = "js";
-    var supportsCssVars = function () {
-      var e,
-        t = document.createElement("style");
-      return (
-        (t.innerHTML = "root: { --tmp-var: bold; }"),
-        document.head.appendChild(t),
-        (e = !!(
-          window.CSS &&
-          window.CSS.supports &&
-          window.CSS.supports("font-weight", "var(--tmp-var)")
-        )),
-        t.parentNode.removeChild(t),
-        e
-      );
-    };
-    supportsCssVars() ||
-      alert("Please view this demo in a modern browser that supports CSS Variables.");
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -42,7 +26,7 @@
   <title>Camilo Salinas | Entrepreneur & Developer</title>
 </head>
 
-<body class="loading">
+<body>
   <div class="container">
     <div class="menu">
       <div class="menu__inner">
@@ -61,34 +45,34 @@
       <div class="main-content" id="banner">
         <section class="grid">
           <div class="grid__item pos-1">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/matrimonio.jpeg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/matrimonio-720-de1abf26e2e0.webp); --image-small: url(/assets/optimized/matrimonio-360-fca8c4cdd2ee.webp)"></div>
           </div>
           <div class="grid__item pos-2">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/Cocora.jpeg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/cocora-720-badca528ddae.webp); --image-small: url(/assets/optimized/cocora-360-4ae913ed978e.webp)"></div>
           </div>
           <div class="grid__item pos-3">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/nieve1.jpeg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/nieve1-720-f8f70ceecd69.webp); --image-small: url(/assets/optimized/nieve1-360-462b28d0b0fa.webp)"></div>
           </div>
           <div class="grid__item pos-4">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/fbdevcircles.jpg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/fbdevcircles-720-bab792b0c510.webp); --image-small: url(/assets/optimized/fbdevcircles-360-31227c8e32f8.webp)"></div>
           </div>
           <div class="grid__item pos-5">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/CEU2.jpeg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/ceu2-720-467f390cc800.webp); --image-small: url(/assets/optimized/ceu2-360-171b48cbe771.webp)"></div>
           </div>
           <div class="grid__item pos-6">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/grad.jpg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/grad-720-48efe9da9e01.webp); --image-small: url(/assets/optimized/grad-360-c1438eba6675.webp)"></div>
           </div>
           <div class="grid__item pos-7">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/nieve2.jpeg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/nieve2-720-c03691d6cd08.webp); --image-small: url(/assets/optimized/nieve2-360-c94f378fd236.webp)"></div>
           </div>
           <div class="grid__item pos-8">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/seneca1.jpg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/seneca1-720-c417b746b487.webp); --image-small: url(/assets/optimized/seneca1-360-0930e2b9eb99.webp)"></div>
           </div>
           <div class="grid__item pos-9">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/profile1.jpg)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/profile1-720-ec40ffcf3028.webp); --image-small: url(/assets/optimized/profile1-360-9369c7bdcfef.webp)"></div>
           </div>
           <div class="grid__item pos-10">
-            <div class="grid__item-img" style="background-image: url(assets/images/Me/speaker.JPG)"></div>
+            <div class="grid__item-img" style="--image: url(/assets/optimized/speaker-720-241df7f166b2.webp); --image-small: url(/assets/optimized/speaker-360-ac13d0fbb1ac.webp)"></div>
           </div>
         </section>
         <h2 class="content__title no-select">
@@ -120,7 +104,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <section class="items">
       <article class="item item--invert">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/Eskombros/3.png)"></div>
+          <div class="item__img" data-bg="assets/optimized/3-1260-bb35784d30dc.webp"></div>
         </div>
         <button class="item__enter unbutton">
           <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800"
@@ -144,7 +128,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </article>
       <article class="item">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/Testbuddy/3.png)"></div>
+          <div class="item__img" data-bg="assets/optimized/3-1280-295670cf52df.webp"></div>
         </div>
         <button class="item__enter unbutton">
           <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800"
@@ -167,7 +151,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </article>
      <article class="item item--invert">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/Eco2Wallet/Eco2Wallet.png)"></div>
+          <div class="item__img" data-bg="assets/optimized/eco2wallet-1178-d753e8d3eb05.webp"></div>
         </div>
         <button class="item__enter unbutton">
           <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800"
@@ -194,7 +178,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </article>
       <article class="item">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/Residia/Modulos.jpeg)"></div>
+          <div class="item__img" data-bg="assets/optimized/modulos-1280-385fd3070755.webp"></div>
         </div>
         <button class="item__enter unbutton">
           <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800"
@@ -220,7 +204,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <article class="item item--invert">
         <div class="item__imgwrap">
           <div class="item__img"
-            style="background-image:url(assets/images/Projects/Recety/Screen\ Shot\ 2020-08-18\ at\ 10.46.41\ PM.png)">
+            data-bg="assets/optimized/screen-shot-2020-08-18-at-10-46-41-pm-1280-8e8ca0c51867.webp">
           </div>
         </div>
         <button class="item__enter unbutton">
@@ -245,7 +229,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </article>
       <article class="item">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/LearnToTransit/Screenshot.png)">
+          <div class="item__img" data-bg="assets/optimized/screenshot-1066-a826cee60b63.webp">
           </div>
         </div>
         <button class="item__enter unbutton">
@@ -271,7 +255,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <article class="item item--invert">
         <div class="item__imgwrap">
           <div class="item__img"
-            style="background-image:url(assets/images/Projects/GGITApps/Screen\ Shot\ 2022-02-17\ at\ 1.58.30\ AM.png)">
+            data-bg="assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-1280-fb1b1fefc9f3.webp">
           </div>
         </div>
         <button class="item__enter unbutton">
@@ -296,7 +280,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </article>
       <article class="item">
         <div class="item__imgwrap">
-          <div class="item__img" style="background-image:url(assets/images/Projects/Minecraft/BosyZh8IcAErDBy.png)">
+          <div class="item__img" data-bg="assets/optimized/bosyzh8icaerdby-1280-8e298a4ddfe7.webp">
           </div>
         </div>
         <button class="item__enter unbutton">
@@ -328,7 +312,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
           <span data-splitting>Startup</span>
         </h2>
         <div class="content__text">
-          <img src="assets/images/Projects/Eskombros/logo.svg" alt="Some image" />
+          <img loading="lazy" decoding="async" data-src="assets/images/Projects/Eskombros/logo.svg" alt="Some image" />
           <h1>Eskombros: Transforming Construction Waste Management</h1>
   <p>
     Eskombros is a sustainable and technologically advanced solution designed to address one of the most significant challenges in the construction industry: the management of construction and demolition waste (RCD). By offering an end-to-end service, Eskombros helps companies optimize their debris processes, reduce costs, and promote environmental sustainability.
@@ -370,7 +354,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <li><strong>AI Optimization</strong>: Use artificial intelligence to enhance route planning, reduce costs, and minimize environmental impact.</li>
   </ul>
   
-  <img src="assets/images/Projects/Eskombros/3.png" alt="Some image" />
+  <img width="1260" height="1543" loading="lazy" decoding="async" data-src="assets/optimized/3-1260-bb35784d30dc.webp" data-srcset="assets/optimized/3-640-684b0637ccb2.webp 640w, assets/optimized/3-1260-bb35784d30dc.webp 1260w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
   <h2>Why Choose Eskombros?</h2>
   <p>
     Construction companies face growing challenges with waste management, ranging from high costs to regulatory compliance. Eskombros addresses these issues through the following key benefits:
@@ -383,7 +367,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <li><strong>Reduced Responsibilities</strong>: Eskombros handles all logistics, allowing companies to focus on their core tasks.</li>
   </ul>
   
-  <img src="assets/images/Projects/Eskombros/2.png" alt="Some image" />
+  <img width="500" height="500" loading="lazy" decoding="async" data-src="assets/optimized/2-500-06a37e659265.webp" alt="Some image" />
   <h2>Starting Point: Bogotá</h2>
   <p>
     Eskombros is launching its services in Bogotá, Colombia, focusing on medium-sized construction firms managing projects with waste volumes between 1,000 and 5,000 cubic meters. This strategic entry point allows Eskombros to work closely with companies open to innovation and technology-driven solutions.
@@ -394,7 +378,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     Eskombros is not just about managing construction waste; it’s about transforming the industry through efficiency, transparency, and sustainability. By providing a unified, technology-backed solution, Eskombros helps companies reduce their environmental impact, save costs, and focus on what truly matters: building a better future.
   </p>
 
-  <img src="assets/images/Projects/Eskombros/1.png" alt="Some image" />
+  <img width="659" height="753" loading="lazy" decoding="async" data-src="assets/optimized/1-659-720adc59ff15.webp" data-srcset="assets/optimized/1-640-e0e2ade743c4.webp 640w, assets/optimized/1-659-720adc59ff15.webp 659w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
   <h3>Key Takeaways</h3>
   <ul>
     <li>Eskombros provides an all-in-one solution for construction waste management.</li>
@@ -421,7 +405,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
           <span data-splitting>Project</span>
         </h2>
         <div class="content__text">
-          <img src="assets/images/Projects/Testbuddy/icon-1.gif" alt="Some image" />
+          <img width="770" height="882" loading="lazy" decoding="async" data-src="assets/optimized/icon-1-640-77d00248f163.webp" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           <p>TestBuddy is an innovative Visual Studio Code extension designed to automate the process of unit testing in software development. By leveraging natural language processing with GPT-3.5-turbo-16k, TestBuddy generates, regenerates, and modifies unit tests based on user inputs, improving testing efficiency and reducing developer frustration. The tool seamlessly integrates into existing workflows, providing intelligent suggestions to address errors while enhancing code quality. It simplifies unit test creation, allowing developers to focus more on coding rather than repetitive testing tasks.</p>
           <ul>
             <li><strong>Purpose</strong>: Automates the creation, regeneration, and modification of unit tests.</li>
@@ -440,12 +424,12 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
             <li><strong>Error Feedback</strong>: Provides intelligent suggestions when tests fail, assisting developers with debugging.</li>
           </ul>
           
-          <img src="assets/images/Projects/Testbuddy/1.png" alt="Some image" />
-          <img src="assets/images/Projects/Testbuddy/2.png" alt="Some image" />
-          <img src="assets/images/Projects/Testbuddy/3.png" alt="Some image" />
-          <img src="assets/images/Projects/Testbuddy/4.png" alt="Some image" />
-          <img src="assets/images/Projects/Testbuddy/5.png" alt="Some image" />
-          <img src="assets/images/Projects/Testbuddy/6.png" alt="Some image" />
+          <img width="3024" height="1894" loading="lazy" decoding="async" data-src="assets/optimized/1-1280-b9858e91646c.webp" data-srcset="assets/optimized/1-640-41f5fe042b3f.webp 640w, assets/optimized/1-1280-b9858e91646c.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="3022" height="1888" loading="lazy" decoding="async" data-src="assets/optimized/2-1280-f3715fdbed45.webp" data-srcset="assets/optimized/2-640-7d2c891c9521.webp 640w, assets/optimized/2-1280-f3715fdbed45.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="3024" height="1898" loading="lazy" decoding="async" data-src="assets/optimized/3-1280-295670cf52df.webp" data-srcset="assets/optimized/3-640-02df927dda75.webp 640w, assets/optimized/3-1280-295670cf52df.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="876" height="1388" loading="lazy" decoding="async" data-src="assets/optimized/4-876-0c8cc31b2695.webp" data-srcset="assets/optimized/4-640-f1db56d4fbf3.webp 640w, assets/optimized/4-876-0c8cc31b2695.webp 876w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="872" height="1612" loading="lazy" decoding="async" data-src="assets/optimized/5-872-2275294008c6.webp" data-srcset="assets/optimized/5-640-8821b699d12b.webp 640w, assets/optimized/5-872-2275294008c6.webp 872w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="1022" height="1130" loading="lazy" decoding="async" data-src="assets/optimized/6-1022-60a3d9f7804a.webp" data-srcset="assets/optimized/6-640-95389ba9ee14.webp 640w, assets/optimized/6-1022-60a3d9f7804a.webp 1022w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           
 
 
@@ -458,14 +442,14 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
           <span data-splitting>Startup</span>
         </h2>
         <div class="content__text">
-          <img src="assets/images/Projects/Eco2Wallet/Eco2Wallet.png" alt="Some image" />
+          <img width="1178" height="658" loading="lazy" decoding="async" data-src="assets/optimized/eco2wallet-1178-d753e8d3eb05.webp" data-srcset="assets/optimized/eco2wallet-640-e0810d6cec76.webp 640w, assets/optimized/eco2wallet-1178-d753e8d3eb05.webp 1178w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           <p>We are a green digital wallet with a debit card that plants trees and seagrass to compensate for the
             environmental impact of your daily purchases. Let's transform each taxi, coffee, etc, into trees in the
             Amazon with eco2wallet! Money doesn't grow on trees, but your money in eco2wallet will make trees grow! </p>
           <p>Imagine a digital Personal Identification, all your debit and credit cards in one, awareness and trading of
             your individual emissions, plant trees in the Amazon with each purchase while owning sustainable crypto. All
             in your eco2wallet.</p>
-          <img src="assets/images/Projects/Eco2Wallet/first-image.png" alt="Some image" />
+          <img width="3143" height="1544" loading="lazy" decoding="async" data-src="assets/optimized/first-image-1280-a9476dc7bf96.webp" data-srcset="assets/optimized/first-image-640-43033e8b96f1.webp 640w, assets/optimized/first-image-1280-a9476dc7bf96.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           <p>eco2wallet, eco2card and eco2app are designed with sustainability at all points, CO2 stands for Carbon
             Dioxide emissions which are the primary pollutant causing climate change, our background is primarily black,
             saving you ~0,103 watts hours than any other website, our trees in the background are native amazonian and
@@ -476,7 +460,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
             their environmental impact with real trees in the Colombian Amazon, because helping the environment via a
             digital wallet is our motto, and creating an individual market of emissions backed by additionality is our
             goal </p>
-          <img src="assets/images/Projects/Eco2Wallet/second-image.png" alt="Some image" />
+          <img width="3197" height="2535" loading="lazy" decoding="async" data-src="assets/optimized/second-image-1280-d3242f2024e3.webp" data-srcset="assets/optimized/second-image-640-7e3ad0d1be44.webp 640w, assets/optimized/second-image-1280-d3242f2024e3.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
         </div>
       </article>
       <article class="content__article content__article--invert" id="residia">
@@ -485,7 +469,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
           <span data-splitting>Startup</span>
         </h2>
         <div class="content__text">
-          <img src="assets/images/Projects/Residia/logo.png" alt="Some image" />
+          <img width="512" height="512" loading="lazy" decoding="async" data-src="assets/optimized/logo-512-ecf0aaf03f65.webp" alt="Some image" />
           <p>Residential complexes are an uninformed and disjoint environment which creates arguments between community
             members, this gets aggrieved by the fact that processes are done in an unorganized way.</p>
           <ul>
@@ -512,11 +496,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
               Low communication and poor quality coexistence between community members
             </li>
           </ul>
-          <img src="assets/images/Projects/Residia/CHAT-1---instaStory.gif" alt="Some image" />
+          <img width="1080" height="1920" loading="lazy" decoding="async" data-src="assets/optimized/chat-1-instastory-640-5d1668130ab3.webp" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           <p>Residia creates a digital ecosystem in the residential complexes with the help of different functionalities and technologies, this allows the interaction and integration between the different community members. This promotes process optimization and formalization while improving coexistence which results in a collaborative and transparent community.
             </p>
           <p> Residia is a mobile first platform that creates, develops, and manages residential communities.</p>
-          <img src="assets/images/Projects/Residia/Modulos.jpeg" alt="Some image" />
+          <img width="1280" height="718" loading="lazy" decoding="async" data-src="assets/optimized/modulos-1280-385fd3070755.webp" data-srcset="assets/optimized/modulos-640-b93b36d3579f.webp 640w, assets/optimized/modulos-1280-385fd3070755.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
         </div>
       </article>
       <article class="content__article" id="recety">
@@ -543,8 +527,8 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
            
             
             </p>
-          <img src="assets/images/Projects/Recety/Screen Shot 2020-08-18 at 10.47.39 PM.png" alt="Some image" />
-          <img src="assets/images/Projects/Recety/Recety.jpeg" alt="Some image" />
+          <img width="582" height="582" loading="lazy" decoding="async" data-src="assets/optimized/screen-shot-2020-08-18-at-10-47-39-pm-582-b4d9feaf8f29.webp" alt="Some image" />
+          <img width="1080" height="1186" loading="lazy" decoding="async" data-src="assets/optimized/recety-1080-44301818866e.webp" data-srcset="assets/optimized/recety-640-eec1df2d99f6.webp 640w, assets/optimized/recety-1080-44301818866e.webp 1080w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
         </div>
       </article>
       <article class="content__article content__article--invert" id="learntotransit">
@@ -555,10 +539,10 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
         <div class="content__text">
           <p>Project developed for "Expoandes" at university to help people learn transit rules didactically. Currently available for download in Google's Play Store. </p>
          
-          <img src="assets/images/Projects/LearnToTransit/Screenshot.png" alt="Some image" />
-          <img src="assets/images/Projects/LearnToTransit/expoandes.jpeg" alt="Some image" />
-          <img src="assets/images/Projects/LearnToTransit/LearnToTransit1.jpeg" alt="Some image" />
-         <video src="assets/images/Projects/LearnToTransit/LearnToTransit.mp4" autoplay muted loop></video>
+          <img width="1066" height="561" loading="lazy" decoding="async" data-src="assets/optimized/screenshot-1066-a826cee60b63.webp" data-srcset="assets/optimized/screenshot-640-27cc4b44f507.webp 640w, assets/optimized/screenshot-1066-a826cee60b63.webp 1066w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="1280" height="720" loading="lazy" decoding="async" data-src="assets/optimized/expoandes-1280-2f15d2d37e0e.webp" data-srcset="assets/optimized/expoandes-640-522a08bd9606.webp 640w, assets/optimized/expoandes-1280-2f15d2d37e0e.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="960" height="1280" loading="lazy" decoding="async" data-src="assets/optimized/learntotransit1-960-81ba6825783b.webp" data-srcset="assets/optimized/learntotransit1-640-9bf90888e136.webp 640w, assets/optimized/learntotransit1-960-81ba6825783b.webp 960w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+         <video width="352" height="640" preload="none" playsinline data-src="assets/images/Projects/LearnToTransit/LearnToTransit.mp4" muted loop></video>
          
          
         </div>
@@ -571,8 +555,8 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
         <div class="content__text">
           <p>Website and App development company I founded when I graduated school, taking advantage of my self-taught coding skills having important clients such as: McDonalds, Siemon, Minesa, Etc... </p>
         
-          <img src="assets/images/Projects/GGITApps/IMG-20161219-WA0022.jpeg" alt="Some image" />
-          <img src="assets/images/Projects/GGITApps/Screen Shot 2022-02-17 at 1.58.30 AM.png" alt="Some image" />
+          <img width="2560" height="1440" loading="lazy" decoding="async" data-src="assets/optimized/img-20161219-wa0022-1280-199421bf05f4.webp" data-srcset="assets/optimized/img-20161219-wa0022-640-84626b36f5ab.webp 640w, assets/optimized/img-20161219-wa0022-1280-199421bf05f4.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="1370" height="451" loading="lazy" decoding="async" data-src="assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-1280-fb1b1fefc9f3.webp" data-srcset="assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-640-4f827cadeb73.webp 640w, assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-1280-fb1b1fefc9f3.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           
         </div>
       </article>
@@ -584,8 +568,8 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
         <div class="content__text">
           <p>My first business and important project in life was minespreack, a minecraft server which became the 3rd largest in LATAM and the 1st largest in Colombia, with more than 100.000 registered users.</p>
          
-          <img src="assets/images/Projects/Minecraft/BosyZh8IcAErDBy.png" alt="Some image" />
-          <img src="assets/images/Projects/Minecraft/999083_10201577723473221_1653632199_n.jpg" alt="Some image" />
+          <img width="1366" height="719" loading="lazy" decoding="async" data-src="assets/optimized/bosyzh8icaerdby-1280-8e298a4ddfe7.webp" data-srcset="assets/optimized/bosyzh8icaerdby-640-7711c0fa51d9.webp 640w, assets/optimized/bosyzh8icaerdby-1280-8e298a4ddfe7.webp 1280w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
+          <img width="854" height="480" loading="lazy" decoding="async" data-src="assets/optimized/999083-10201577723473221-1653632199-n-854-629c74ea2e94.webp" data-srcset="assets/optimized/999083-10201577723473221-1653632199-n-640-9be20cbe2874.webp 640w, assets/optimized/999083-10201577723473221-1653632199-n-854-629c74ea2e94.webp 854w" sizes="(max-width: 800px) 70vw, 730px" alt="Some image" />
           
         </div>
       </article>
@@ -620,12 +604,12 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--GSEA Global-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/GSEA/GSEA1.jpeg" alt="Some image" />
-          <img class="slide__img slide__img--2" src="assets/images/Projects/GSEA/GSEA2.jpeg" alt="Some image" />
+          <img class="slide__img slide__img--1" width="960" height="960" loading="lazy" decoding="async" data-src="assets/optimized/gsea1-960-59cdf59d58c7.webp" data-srcset="assets/optimized/gsea1-640-e49c8db89549.webp 640w, assets/optimized/gsea1-960-59cdf59d58c7.webp 960w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+          <img class="slide__img slide__img--2" width="900" height="1600" loading="lazy" decoding="async" data-src="assets/optimized/gsea2-900-88e6ea876b12.webp" data-srcset="assets/optimized/gsea2-640-1d3847515ea4.webp 640w, assets/optimized/gsea2-900-88e6ea876b12.webp 900w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
           <div class="break"></div>
-          <img class="slide__img slide__img--3" src="assets/images/Projects/GSEA/GSEA3.JPG" alt="Some image" />
+          <img class="slide__img slide__img--3" width="1125" height="2000" loading="lazy" decoding="async" data-src="assets/optimized/gsea3-1125-2f4d1cfc91fc.webp" data-srcset="assets/optimized/gsea3-640-4e1b7b43b2ca.webp 640w, assets/optimized/gsea3-1125-2f4d1cfc91fc.webp 1125w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
           <img class="slide__img slide__img--4"
-            src="assets/images/Projects/GSEA/182083482_311874463835707_1428158974539628495_n.jpeg" alt="Some image" />
+            width="960" height="960" loading="lazy" decoding="async" data-src="assets/optimized/182083482-311874463835707-1428158974539628495-n-960-a902b94e4c4d.webp" data-srcset="assets/optimized/182083482-311874463835707-1428158974539628495-n-640-29cbb4c11cac.webp 640w, assets/optimized/182083482-311874463835707-1428158974539628495-n-960-a902b94e4c4d.webp 960w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
         </div>
         <h2 class="slide__title">
           <span class="slide__title-inner slide__title-inner--middle" data-splitting>3rd </span>
@@ -643,11 +627,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <div class="slide">
         <div class="slide__img-wrap">
           <img class="slide__img slide__img--1"
-            src="assets/images/Projects/GSEA/WhatsApp Image 2021-01-28 at 6.02.59 PM.jpeg" alt="Some image" />
+            width="624" height="384" loading="lazy" decoding="async" data-src="assets/optimized/whatsapp-image-2021-01-28-at-6-02-59-pm-624-4c806c147b2f.webp" alt="Some image" />
 
           <div class="break"></div>
           <img class="slide__img slide__img--3"
-            src="assets/images/Projects/GSEA/151070035_3715536891867521_6737781672471853444_n.jpeg" alt="Some image" />
+            width="960" height="960" loading="lazy" decoding="async" data-src="assets/optimized/151070035-3715536891867521-6737781672471853444-n-960-6f39ec1771bf.webp" data-srcset="assets/optimized/151070035-3715536891867521-6737781672471853444-n-640-0dc21c75c033.webp 640w, assets/optimized/151070035-3715536891867521-6737781672471853444-n-960-6f39ec1771bf.webp 960w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
         </div>
         <h2 class="slide__title">
           <span class="slide__title-inner" data-splitting>Colombian </span>
@@ -663,13 +647,13 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--Fellowship-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/Fellowship/Fellowship1.jpeg"
+          <img class="slide__img slide__img--1" width="1200" height="540" loading="lazy" decoding="async" data-src="assets/optimized/fellowship1-1200-3e3cf5cdffc3.webp" data-srcset="assets/optimized/fellowship1-640-e7f87343d90c.webp 640w, assets/optimized/fellowship1-1200-3e3cf5cdffc3.webp 1200w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
 
           <div class="break"></div>
-          <img class="slide__img slide__img--3" src="assets/images/Projects/Fellowship/Fellowship3.jpeg"
+          <img class="slide__img slide__img--3" width="1536" height="2048" loading="lazy" decoding="async" data-src="assets/optimized/fellowship3-1280-242688808ebd.webp" data-srcset="assets/optimized/fellowship3-640-b6f81d9a09e4.webp 640w, assets/optimized/fellowship3-1280-242688808ebd.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
-          <img class="slide__img slide__img--4" src="assets/images/Projects/Fellowship/Fellowship6.png"
+          <img class="slide__img slide__img--4" width="2160" height="2160" loading="lazy" decoding="async" data-src="assets/optimized/fellowship6-1280-1430b33f77be.webp" data-srcset="assets/optimized/fellowship6-640-5d87f9532950.webp 640w, assets/optimized/fellowship6-1280-1430b33f77be.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
         </div>
         <h2 class="slide__title">
@@ -685,11 +669,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--ACAMICA-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/Acamica/acamica1.jpeg" alt="Acamica 1" />
-          <img class="slide__img slide__img--2" src="assets/images/Projects/Acamica/acamica2.jpeg" alt="Acamica 2" />
+          <img class="slide__img slide__img--1" width="715" height="539" loading="lazy" decoding="async" data-src="assets/optimized/acamica1-715-92adabf5c33f.webp" data-srcset="assets/optimized/acamica1-640-c266fe96cada.webp 640w, assets/optimized/acamica1-715-92adabf5c33f.webp 715w" sizes="(max-width: 800px) 80vw, 50vw" alt="Acamica 1" />
+          <img class="slide__img slide__img--2" width="1280" height="960" loading="lazy" decoding="async" data-src="assets/optimized/acamica2-1280-a8e0333c2a94.webp" data-srcset="assets/optimized/acamica2-640-cc79b7fb605f.webp 640w, assets/optimized/acamica2-1280-a8e0333c2a94.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw" alt="Acamica 2" />
           <div class="break"></div>
-          <img class="slide__img slide__img--3" src="assets/images/Projects/Acamica/acamica3.jpeg" alt="Acamica 3" />
-          <img class="slide__img slide__img--4" src="assets/images/Projects/Acamica/01-Home@2x.jpg" alt="Some image" />
+          <img class="slide__img slide__img--3" width="1280" height="652" loading="lazy" decoding="async" data-src="assets/optimized/acamica3-1280-c127df311d39.webp" data-srcset="assets/optimized/acamica3-640-04acdae48eb5.webp 640w, assets/optimized/acamica3-1280-c127df311d39.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw" alt="Acamica 3" />
+          <img class="slide__img slide__img--4" width="2880" height="3042" loading="lazy" decoding="async" data-src="assets/optimized/01-home-2x-1280-d4c1d30002c7.webp" data-srcset="assets/optimized/01-home-2x-640-4fb95f96354b.webp 640w, assets/optimized/01-home-2x-1280-d4c1d30002c7.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
         </div>
         <h2 class="slide__title">
           <span class="slide__title-inner" data-splitting>Mentor</span>
@@ -704,11 +688,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--CEU-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/CEU/CEU2.jpeg" alt="Acamica 1" />
+          <img class="slide__img slide__img--1" width="720" height="1280" loading="lazy" decoding="async" data-src="assets/optimized/ceu2-720-467f390cc800.webp" data-srcset="assets/optimized/ceu2-640-05a0c4726c7c.webp 640w, assets/optimized/ceu2-720-467f390cc800.webp 720w" sizes="(max-width: 800px) 80vw, 50vw" alt="Acamica 1" />
 
           <div class="break"></div>
-          <img class="slide__img slide__img--3" src="assets/images/Projects/CEU/seneca1.jpg" alt="Some image" />
-          <img class="slide__img slide__img--4" src="assets/images/Projects/CEU/CEU3.jpg" alt="Some image" />
+          <img class="slide__img slide__img--3" width="960" height="639" loading="lazy" decoding="async" data-src="assets/optimized/seneca1-960-658e8eaa1fe7.webp" data-srcset="assets/optimized/seneca1-640-0c62b8075575.webp 640w, assets/optimized/seneca1-960-658e8eaa1fe7.webp 960w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+          <img class="slide__img slide__img--4" width="1000" height="1000" loading="lazy" decoding="async" data-src="assets/optimized/ceu3-1000-bf00244c5f43.webp" data-srcset="assets/optimized/ceu3-640-034b82be4724.webp 640w, assets/optimized/ceu3-1000-bf00244c5f43.webp 1000w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
         </div>
         <h2 class="slide__title">
           <span class="slide__title-inner" data-splitting>STUDENT</span>
@@ -724,12 +708,12 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--Hackatones-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/HackatonCarvajal/Team.jpeg"
+          <img class="slide__img slide__img--1" width="6000" height="4000" loading="lazy" decoding="async" data-src="assets/optimized/team-1280-b75e4c2ec03e.webp" data-srcset="assets/optimized/team-640-611995f63b6f.webp 640w, assets/optimized/team-1280-b75e4c2ec03e.webp 1280w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
 
           <div class="break"></div>
           <img class="slide__img slide__img--3"
-            src="assets/images/Projects/HackatonCarvajal/WhatsApp Image 2021-01-26 at 3.39.13 PM.jpeg"
+            width="1152" height="864" loading="lazy" decoding="async" data-src="assets/optimized/whatsapp-image-2021-01-26-at-3-39-13-pm-1152-7e94109e7fe6.webp" data-srcset="assets/optimized/whatsapp-image-2021-01-26-at-3-39-13-pm-640-bffcc142f435.webp 640w, assets/optimized/whatsapp-image-2021-01-26-at-3-39-13-pm-1152-7e94109e7fe6.webp 1152w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
         </div>
         <h2 class="slide__title">
@@ -747,7 +731,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--Maraton De Seguridad-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/MaratonSeguridad/mseguridad.jpg"
+          <img class="slide__img slide__img--1" width="1024" height="576" loading="lazy" decoding="async" data-src="assets/optimized/mseguridad-1024-bad7cbf95a96.webp" data-srcset="assets/optimized/mseguridad-640-df13dffe4829.webp 640w, assets/optimized/mseguridad-1024-bad7cbf95a96.webp 1024w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
         </div>
         <h2 class="slide__title">
@@ -759,15 +743,15 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       <!--Learn To Transit-->
       <div class="slide">
         <div class="slide__img-wrap">
-          <img class="slide__img slide__img--1" src="assets/images/Projects/LearnToTransit/lt.png" alt="Some image" />
-          <img class="slide__img slide__img--2" src="assets/images/Projects/LearnToTransit/diploma.jpeg"
+          <img class="slide__img slide__img--1" width="180" height="180" loading="lazy" decoding="async" data-src="assets/optimized/lt-180-a07dfe1904cf.webp" alt="Some image" />
+          <img class="slide__img slide__img--2" width="941" height="1280" loading="lazy" decoding="async" data-src="assets/optimized/diploma-941-55b7f5751a56.webp" data-srcset="assets/optimized/diploma-640-0a9d8c854455.webp 640w, assets/optimized/diploma-941-55b7f5751a56.webp 941w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
           <div class="break"></div>
 
-          <img class="slide__img slide__img--3" src="assets/images/Projects/LearnToTransit/LearnToTransit1.jpeg"
+          <img class="slide__img slide__img--3" width="960" height="1280" loading="lazy" decoding="async" data-src="assets/optimized/learntotransit1-960-81ba6825783b.webp" data-srcset="assets/optimized/learntotransit1-640-9bf90888e136.webp 640w, assets/optimized/learntotransit1-960-81ba6825783b.webp 960w" sizes="(max-width: 800px) 80vw, 50vw"
             alt="Some image" />
-          <video class="slide__img slide__img--4" src="assets/images/Projects/LearnToTransit/LearnToTransit.mp4"
-            alt="Some image" autoplay muted loop />
+          <video width="352" height="640" preload="none" playsinline class="slide__img slide__img--4" data-src="assets/images/Projects/LearnToTransit/LearnToTransit.mp4"
+            muted loop></video>
         </div>
         <h2 class="slide__title">
           <span class="slide__title-inner" data-splitting>Learn</span>
@@ -794,7 +778,7 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
       </button>
     </section>
 
-    <iframe class="audio-experience" src="./audioplayer/index.html" frameborder="0" id="likes"></iframe>
+    <iframe class="audio-experience" data-src="./audioplayer/index.html" loading="lazy" title="Interactive music visualizer" frameborder="0" id="likes"></iframe>
   </div>
 
 
@@ -815,12 +799,12 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <!--Cooking-->
     <div class="slide">
       <div class="slide__img-wrap">
-        <img class="slide__img slide__img--1" src="assets/images/Hobbies/Cocina2.jpeg" alt="Some image" />
-        <img class="slide__img slide__img--2" src="assets/images/Hobbies/Cocina3.jpeg" alt="Some image" />
+        <img class="slide__img slide__img--1" width="768" height="1024" loading="lazy" decoding="async" data-src="assets/optimized/cocina2-768-2c9c67c0c091.webp" data-srcset="assets/optimized/cocina2-640-47a53a4212ec.webp 640w, assets/optimized/cocina2-768-2c9c67c0c091.webp 768w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+        <img class="slide__img slide__img--2" width="757" height="1600" loading="lazy" decoding="async" data-src="assets/optimized/cocina3-757-033d8882cb40.webp" data-srcset="assets/optimized/cocina3-640-3add544a8b17.webp 640w, assets/optimized/cocina3-757-033d8882cb40.webp 757w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
         <div class="break"></div>
-        <img class="slide__img slide__img--3" src="assets/images/Hobbies/Cocina4.jpeg" alt="Some image" />
-        <video class="slide__img slide__img--4" src="assets/images/Hobbies/Cocina.mp4" alt="Some image" muted autoplay
-          loop />
+        <img class="slide__img slide__img--3" width="757" height="1600" loading="lazy" decoding="async" data-src="assets/optimized/cocina4-757-bc0256fc1ace.webp" data-srcset="assets/optimized/cocina4-640-8d3343fb644a.webp 640w, assets/optimized/cocina4-757-bc0256fc1ace.webp 757w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+        <video width="640" height="1212" preload="none" playsinline class="slide__img slide__img--4" data-src="assets/images/Hobbies/Cocina.mp4" muted
+          loop></video>
       </div>
       <h2 class="slide__title">
         <span class="slide__title-inner slide__title-inner--middle" data-splitting>I</span>
@@ -834,11 +818,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <!--Developer Events-->
     <div class="slide">
       <div class="slide__img-wrap">
-        <img class="slide__img slide__img--1" src="assets/images/Hobbies/fbdevcircles.jpg" alt="Some image" />
+        <img class="slide__img slide__img--1" width="1080" height="810" loading="lazy" decoding="async" data-src="assets/optimized/fbdevcircles-1080-0877a6fb07c1.webp" data-srcset="assets/optimized/fbdevcircles-640-281c002cf274.webp 640w, assets/optimized/fbdevcircles-1080-0877a6fb07c1.webp 1080w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
 
         <div class="break"></div>
-        <img class="slide__img slide__img--3" src="assets/images/Hobbies/node1.jpeg" alt="Some image" />
-        <img class="slide__img slide__img--4" src="assets/images/Hobbies/node2.jpeg" alt="Some image" />
+        <img class="slide__img slide__img--3" width="899" height="1599" loading="lazy" decoding="async" data-src="assets/optimized/node1-899-757910673009.webp" data-srcset="assets/optimized/node1-640-41594a87d9d3.webp 640w, assets/optimized/node1-899-757910673009.webp 899w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+        <img class="slide__img slide__img--4" width="899" height="1599" loading="lazy" decoding="async" data-src="assets/optimized/node2-899-19af668ef544.webp" data-srcset="assets/optimized/node2-640-bd4aecad8571.webp 640w, assets/optimized/node2-899-19af668ef544.webp 899w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
       </div>
       <h2 class="slide__title">
         <span class="slide__title-inner" data-splitting>I</span>
@@ -852,11 +836,11 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <!--Playing Videogames-->
     <div class="slide">
       <div class="slide__img-wrap">
-        <img class="slide__img slide__img--1" src="assets/images/Hobbies/Videogames1.jpeg" alt="Some image" />
+        <img class="slide__img slide__img--1" width="910" height="1227" loading="lazy" decoding="async" data-src="assets/optimized/videogames1-910-a627c5c014ec.webp" data-srcset="assets/optimized/videogames1-640-94e556202c92.webp 640w, assets/optimized/videogames1-910-a627c5c014ec.webp 910w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
 
         <div class="break"></div>
 
-        <img class="slide__img slide__img--4" src="assets/images/Hobbies/Videogames2.jpeg" alt="Some image" />
+        <img class="slide__img slide__img--4" width="1079" height="1077" loading="lazy" decoding="async" data-src="assets/optimized/videogames2-1079-e11f86c707df.webp" data-srcset="assets/optimized/videogames2-640-985941886898.webp 640w, assets/optimized/videogames2-1079-e11f86c707df.webp 1079w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
       </div>
       <h2 class="slide__title">
         <span class="slide__title-inner" data-splitting>I'm</span>
@@ -868,13 +852,13 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
     <!--Playing Videogames-->
     <div class="slide">
       <div class="slide__img-wrap">
-        <img class="slide__img slide__img--1" src="assets/images/Hobbies/Socks1.jpeg" alt="Some image" />
+        <img class="slide__img slide__img--1" width="757" height="1600" loading="lazy" decoding="async" data-src="assets/optimized/socks1-757-f6bdf7d6c709.webp" data-srcset="assets/optimized/socks1-640-8f6778a47402.webp 640w, assets/optimized/socks1-757-f6bdf7d6c709.webp 757w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
 
         <div class="break"></div>
 
-        <img class="slide__img slide__img--4" src="assets/images/Hobbies/Socks2.jpeg" alt="Some image" />
-        <video class="slide__img slide__img--4" src="assets/images/Hobbies/Socks.mp4" alt="Some image" muted autoplay
-          loop />
+        <img class="slide__img slide__img--4" width="757" height="1600" loading="lazy" decoding="async" data-src="assets/optimized/socks2-757-209cc1620c13.webp" data-srcset="assets/optimized/socks2-640-066d29e13a52.webp 640w, assets/optimized/socks2-757-209cc1620c13.webp 757w" sizes="(max-width: 800px) 80vw, 50vw" alt="Some image" />
+        <video width="640" height="1212" preload="none" playsinline class="slide__img slide__img--4" data-src="assets/images/Hobbies/Socks.mp4" muted
+          loop></video>
       </div>
       <h2 class="slide__title">
         <span class="slide__title-inner" data-splitting>I'm Always</span>
@@ -985,13 +969,12 @@ I am Camilo Salinas, a Systems and Computing Engineer who graduated from Univers
   <svg class="cursor" width="60" height="60" viewBox="0 0 60 60">
     <circle class="cursor__inner" cx="30" cy="30" r="15" />
   </svg>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="lib/utils.js"></script>
-  <script src="lib/cursor.js"></script>
-  <script src="lib/index.js"></script>
+  <script defer src="lib/media.js"></script>
+  <script defer src="assets/vendor/splitting-1.1.0.min.js"></script>
+  <script defer src="assets/vendor/gsap-3.9.1.min.js"></script>
+  <script defer src="lib/utils.js"></script>
+  <script defer src="lib/cursor.js"></script>
+  <script defer src="lib/index.js"></script>
 </body>
 
 </html>
