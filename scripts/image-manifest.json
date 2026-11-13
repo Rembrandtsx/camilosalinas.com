@@ -1,0 +1,1106 @@
+{
+  "assets/images/Me/matrimonio.jpeg": {
+    "width": 2048,
+    "height": 1365,
+    "originalBytes": 1073066,
+    "variants": [
+      {
+        "source": "assets/optimized/matrimonio-360-fca8c4cdd2ee.webp",
+        "width": 360,
+        "bytes": 13208
+      },
+      {
+        "source": "assets/optimized/matrimonio-720-de1abf26e2e0.webp",
+        "width": 720,
+        "bytes": 35944
+      }
+    ]
+  },
+  "assets/images/Me/Cocora.jpeg": {
+    "width": 1200,
+    "height": 1600,
+    "originalBytes": 200093,
+    "variants": [
+      {
+        "source": "assets/optimized/cocora-360-4ae913ed978e.webp",
+        "width": 360,
+        "bytes": 17602
+      },
+      {
+        "source": "assets/optimized/cocora-720-badca528ddae.webp",
+        "width": 720,
+        "bytes": 59062
+      }
+    ]
+  },
+  "assets/images/Me/nieve1.jpeg": {
+    "width": 960,
+    "height": 1280,
+    "originalBytes": 115549,
+    "variants": [
+      {
+        "source": "assets/optimized/nieve1-360-462b28d0b0fa.webp",
+        "width": 360,
+        "bytes": 22322
+      },
+      {
+        "source": "assets/optimized/nieve1-720-f8f70ceecd69.webp",
+        "width": 720,
+        "bytes": 57734
+      }
+    ]
+  },
+  "assets/images/Me/fbdevcircles.jpg": {
+    "width": 1080,
+    "height": 810,
+    "originalBytes": 79184,
+    "variants": [
+      {
+        "source": "assets/optimized/fbdevcircles-360-31227c8e32f8.webp",
+        "width": 360,
+        "bytes": 16210
+      },
+      {
+        "source": "assets/optimized/fbdevcircles-720-bab792b0c510.webp",
+        "width": 720,
+        "bytes": 45856
+      }
+    ]
+  },
+  "assets/images/Me/CEU2.jpeg": {
+    "width": 720,
+    "height": 1280,
+    "originalBytes": 89070,
+    "variants": [
+      {
+        "source": "assets/optimized/ceu2-360-171b48cbe771.webp",
+        "width": 360,
+        "bytes": 28800
+      },
+      {
+        "source": "assets/optimized/ceu2-720-467f390cc800.webp",
+        "width": 720,
+        "bytes": 61720
+      }
+    ]
+  },
+  "assets/images/Me/grad.jpg": {
+    "width": 1080,
+    "height": 864,
+    "originalBytes": 94037,
+    "variants": [
+      {
+        "source": "assets/optimized/grad-360-c1438eba6675.webp",
+        "width": 360,
+        "bytes": 17640
+      },
+      {
+        "source": "assets/optimized/grad-720-48efe9da9e01.webp",
+        "width": 720,
+        "bytes": 50330
+      }
+    ]
+  },
+  "assets/images/Me/nieve2.jpeg": {
+    "width": 758,
+    "height": 1599,
+    "originalBytes": 169520,
+    "variants": [
+      {
+        "source": "assets/optimized/nieve2-360-c94f378fd236.webp",
+        "width": 360,
+        "bytes": 43180
+      },
+      {
+        "source": "assets/optimized/nieve2-720-c03691d6cd08.webp",
+        "width": 720,
+        "bytes": 133038
+      }
+    ]
+  },
+  "assets/images/Me/seneca1.jpg": {
+    "width": 960,
+    "height": 639,
+    "originalBytes": 62232,
+    "variants": [
+      {
+        "source": "assets/optimized/seneca1-360-0930e2b9eb99.webp",
+        "width": 360,
+        "bytes": 15978
+      },
+      {
+        "source": "assets/optimized/seneca1-720-c417b746b487.webp",
+        "width": 720,
+        "bytes": 38958
+      }
+    ]
+  },
+  "assets/images/Me/profile1.jpg": {
+    "width": 3376,
+    "height": 4501,
+    "originalBytes": 654517,
+    "variants": [
+      {
+        "source": "assets/optimized/profile1-360-9369c7bdcfef.webp",
+        "width": 360,
+        "bytes": 8046
+      },
+      {
+        "source": "assets/optimized/profile1-720-ec40ffcf3028.webp",
+        "width": 720,
+        "bytes": 29906
+      }
+    ]
+  },
+  "assets/images/Me/speaker.JPG": {
+    "width": 1125,
+    "height": 2000,
+    "originalBytes": 219285,
+    "variants": [
+      {
+        "source": "assets/optimized/speaker-360-ac13d0fbb1ac.webp",
+        "width": 360,
+        "bytes": 18542
+      },
+      {
+        "source": "assets/optimized/speaker-720-241df7f166b2.webp",
+        "width": 720,
+        "bytes": 47812
+      }
+    ]
+  },
+  "assets/images/Projects/Eskombros/3.png": {
+    "width": 1260,
+    "height": 1543,
+    "originalBytes": 1653168,
+    "variants": [
+      {
+        "source": "assets/optimized/3-640-684b0637ccb2.webp",
+        "width": 640,
+        "bytes": 69174
+      },
+      {
+        "source": "assets/optimized/3-1260-bb35784d30dc.webp",
+        "width": 1260,
+        "bytes": 138100
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/3.png": {
+    "width": 3024,
+    "height": 1898,
+    "originalBytes": 914376,
+    "variants": [
+      {
+        "source": "assets/optimized/3-640-02df927dda75.webp",
+        "width": 640,
+        "bytes": 28236
+      },
+      {
+        "source": "assets/optimized/3-1280-295670cf52df.webp",
+        "width": 1280,
+        "bytes": 84942
+      }
+    ]
+  },
+  "assets/images/Projects/Eco2Wallet/Eco2Wallet.png": {
+    "width": 1178,
+    "height": 658,
+    "originalBytes": 71960,
+    "variants": [
+      {
+        "source": "assets/optimized/eco2wallet-640-e0810d6cec76.webp",
+        "width": 640,
+        "bytes": 6632
+      },
+      {
+        "source": "assets/optimized/eco2wallet-1178-d753e8d3eb05.webp",
+        "width": 1178,
+        "bytes": 12830
+      }
+    ]
+  },
+  "assets/images/Projects/Residia/Modulos.jpeg": {
+    "width": 1280,
+    "height": 718,
+    "originalBytes": 97782,
+    "variants": [
+      {
+        "source": "assets/optimized/modulos-640-b93b36d3579f.webp",
+        "width": 640,
+        "bytes": 16052
+      },
+      {
+        "source": "assets/optimized/modulos-1280-385fd3070755.webp",
+        "width": 1280,
+        "bytes": 41738
+      }
+    ]
+  },
+  "assets/images/Projects/Recety/Screen Shot 2020-08-18 at 10.46.41 PM.png": {
+    "width": 2236,
+    "height": 580,
+    "originalBytes": 62153,
+    "variants": [
+      {
+        "source": "assets/optimized/screen-shot-2020-08-18-at-10-46-41-pm-640-10702167e5c4.webp",
+        "width": 640,
+        "bytes": 5344
+      },
+      {
+        "source": "assets/optimized/screen-shot-2020-08-18-at-10-46-41-pm-1280-8e8ca0c51867.webp",
+        "width": 1280,
+        "bytes": 10518
+      }
+    ]
+  },
+  "assets/images/Projects/LearnToTransit/Screenshot.png": {
+    "width": 1066,
+    "height": 561,
+    "originalBytes": 712251,
+    "variants": [
+      {
+        "source": "assets/optimized/screenshot-640-27cc4b44f507.webp",
+        "width": 640,
+        "bytes": 32314
+      },
+      {
+        "source": "assets/optimized/screenshot-1066-a826cee60b63.webp",
+        "width": 1066,
+        "bytes": 56460
+      }
+    ]
+  },
+  "assets/images/Projects/GGITApps/Screen Shot 2022-02-17 at 1.58.30 AM.png": {
+    "width": 1370,
+    "height": 451,
+    "originalBytes": 31858,
+    "variants": [
+      {
+        "source": "assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-640-4f827cadeb73.webp",
+        "width": 640,
+        "bytes": 4224
+      },
+      {
+        "source": "assets/optimized/screen-shot-2022-02-17-at-1-58-30-am-1280-fb1b1fefc9f3.webp",
+        "width": 1280,
+        "bytes": 8910
+      }
+    ]
+  },
+  "assets/images/Projects/Minecraft/BosyZh8IcAErDBy.png": {
+    "width": 1366,
+    "height": 719,
+    "originalBytes": 1126760,
+    "variants": [
+      {
+        "source": "assets/optimized/bosyzh8icaerdby-640-7711c0fa51d9.webp",
+        "width": 640,
+        "bytes": 34976
+      },
+      {
+        "source": "assets/optimized/bosyzh8icaerdby-1280-8e298a4ddfe7.webp",
+        "width": 1280,
+        "bytes": 113748
+      }
+    ]
+  },
+  "assets/images/Projects/Eskombros/2.png": {
+    "width": 500,
+    "height": 500,
+    "originalBytes": 341299,
+    "variants": [
+      {
+        "source": "assets/optimized/2-500-06a37e659265.webp",
+        "width": 500,
+        "bytes": 35582
+      }
+    ]
+  },
+  "assets/images/Projects/Eskombros/1.png": {
+    "width": 659,
+    "height": 753,
+    "originalBytes": 1000891,
+    "variants": [
+      {
+        "source": "assets/optimized/1-640-e0e2ade743c4.webp",
+        "width": 640,
+        "bytes": 60422
+      },
+      {
+        "source": "assets/optimized/1-659-720adc59ff15.webp",
+        "width": 659,
+        "bytes": 55952
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/icon-1.gif": {
+    "width": 770,
+    "height": 882,
+    "originalBytes": 208637,
+    "variants": [
+      {
+        "source": "assets/optimized/icon-1-640-77d00248f163.webp",
+        "width": 640,
+        "bytes": 68910
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/1.png": {
+    "width": 3024,
+    "height": 1894,
+    "originalBytes": 468934,
+    "variants": [
+      {
+        "source": "assets/optimized/1-640-41f5fe042b3f.webp",
+        "width": 640,
+        "bytes": 14574
+      },
+      {
+        "source": "assets/optimized/1-1280-b9858e91646c.webp",
+        "width": 1280,
+        "bytes": 41436
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/2.png": {
+    "width": 3022,
+    "height": 1888,
+    "originalBytes": 979679,
+    "variants": [
+      {
+        "source": "assets/optimized/2-640-7d2c891c9521.webp",
+        "width": 640,
+        "bytes": 30494
+      },
+      {
+        "source": "assets/optimized/2-1280-f3715fdbed45.webp",
+        "width": 1280,
+        "bytes": 94638
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/4.png": {
+    "width": 876,
+    "height": 1388,
+    "originalBytes": 168513,
+    "variants": [
+      {
+        "source": "assets/optimized/4-640-f1db56d4fbf3.webp",
+        "width": 640,
+        "bytes": 35170
+      },
+      {
+        "source": "assets/optimized/4-876-0c8cc31b2695.webp",
+        "width": 876,
+        "bytes": 50812
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/5.png": {
+    "width": 872,
+    "height": 1612,
+    "originalBytes": 265584,
+    "variants": [
+      {
+        "source": "assets/optimized/5-640-8821b699d12b.webp",
+        "width": 640,
+        "bytes": 61698
+      },
+      {
+        "source": "assets/optimized/5-872-2275294008c6.webp",
+        "width": 872,
+        "bytes": 90846
+      }
+    ]
+  },
+  "assets/images/Projects/Testbuddy/6.png": {
+    "width": 1022,
+    "height": 1130,
+    "originalBytes": 298498,
+    "variants": [
+      {
+        "source": "assets/optimized/6-640-95389ba9ee14.webp",
+        "width": 640,
+        "bytes": 30272
+      },
+      {
+        "source": "assets/optimized/6-1022-60a3d9f7804a.webp",
+        "width": 1022,
+        "bytes": 51522
+      }
+    ]
+  },
+  "assets/images/Projects/Eco2Wallet/first-image.png": {
+    "width": 3143,
+    "height": 1544,
+    "originalBytes": 1571043,
+    "variants": [
+      {
+        "source": "assets/optimized/first-image-640-43033e8b96f1.webp",
+        "width": 640,
+        "bytes": 22188
+      },
+      {
+        "source": "assets/optimized/first-image-1280-a9476dc7bf96.webp",
+        "width": 1280,
+        "bytes": 52376
+      }
+    ]
+  },
+  "assets/images/Projects/Eco2Wallet/second-image.png": {
+    "width": 3197,
+    "height": 2535,
+    "originalBytes": 2747528,
+    "variants": [
+      {
+        "source": "assets/optimized/second-image-640-7e3ad0d1be44.webp",
+        "width": 640,
+        "bytes": 37154
+      },
+      {
+        "source": "assets/optimized/second-image-1280-d3242f2024e3.webp",
+        "width": 1280,
+        "bytes": 103864
+      }
+    ]
+  },
+  "assets/images/Projects/Residia/logo.png": {
+    "width": 512,
+    "height": 512,
+    "originalBytes": 17719,
+    "variants": [
+      {
+        "source": "assets/optimized/logo-512-ecf0aaf03f65.webp",
+        "width": 512,
+        "bytes": 6966
+      }
+    ]
+  },
+  "assets/images/Projects/Residia/CHAT-1---instaStory.gif": {
+    "width": 1080,
+    "height": 1920,
+    "originalBytes": 3883091,
+    "variants": [
+      {
+        "source": "assets/optimized/chat-1-instastory-640-5d1668130ab3.webp",
+        "width": 640,
+        "bytes": 2215922
+      }
+    ]
+  },
+  "assets/images/Projects/Recety/Screen Shot 2020-08-18 at 10.47.39 PM.png": {
+    "width": 582,
+    "height": 582,
+    "originalBytes": 29630,
+    "variants": [
+      {
+        "source": "assets/optimized/screen-shot-2020-08-18-at-10-47-39-pm-582-b4d9feaf8f29.webp",
+        "width": 582,
+        "bytes": 9228
+      }
+    ]
+  },
+  "assets/images/Projects/Recety/Recety.jpeg": {
+    "width": 1080,
+    "height": 1186,
+    "originalBytes": 267746,
+    "variants": [
+      {
+        "source": "assets/optimized/recety-640-eec1df2d99f6.webp",
+        "width": 640,
+        "bytes": 55712
+      },
+      {
+        "source": "assets/optimized/recety-1080-44301818866e.webp",
+        "width": 1080,
+        "bytes": 121322
+      }
+    ]
+  },
+  "assets/images/Projects/LearnToTransit/expoandes.jpeg": {
+    "width": 1280,
+    "height": 720,
+    "originalBytes": 105012,
+    "variants": [
+      {
+        "source": "assets/optimized/expoandes-640-522a08bd9606.webp",
+        "width": 640,
+        "bytes": 29860
+      },
+      {
+        "source": "assets/optimized/expoandes-1280-2f15d2d37e0e.webp",
+        "width": 1280,
+        "bytes": 78772
+      }
+    ]
+  },
+  "assets/images/Projects/LearnToTransit/LearnToTransit1.jpeg": {
+    "width": 960,
+    "height": 1280,
+    "originalBytes": 95775,
+    "variants": [
+      {
+        "source": "assets/optimized/learntotransit1-640-9bf90888e136.webp",
+        "width": 640,
+        "bytes": 37156
+      },
+      {
+        "source": "assets/optimized/learntotransit1-960-81ba6825783b.webp",
+        "width": 960,
+        "bytes": 62276
+      }
+    ]
+  },
+  "assets/images/Projects/GGITApps/IMG-20161219-WA0022.jpeg": {
+    "width": 2560,
+    "height": 1440,
+    "originalBytes": 249350,
+    "variants": [
+      {
+        "source": "assets/optimized/img-20161219-wa0022-640-84626b36f5ab.webp",
+        "width": 640,
+        "bytes": 11150
+      },
+      {
+        "source": "assets/optimized/img-20161219-wa0022-1280-199421bf05f4.webp",
+        "width": 1280,
+        "bytes": 28290
+      }
+    ]
+  },
+  "assets/images/Projects/Minecraft/999083_10201577723473221_1653632199_n.jpg": {
+    "width": 854,
+    "height": 480,
+    "originalBytes": 197248,
+    "variants": [
+      {
+        "source": "assets/optimized/999083-10201577723473221-1653632199-n-640-9be20cbe2874.webp",
+        "width": 640,
+        "bytes": 76442
+      },
+      {
+        "source": "assets/optimized/999083-10201577723473221-1653632199-n-854-629c74ea2e94.webp",
+        "width": 854,
+        "bytes": 160364
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/GSEA1.jpeg": {
+    "width": 960,
+    "height": 960,
+    "originalBytes": 65514,
+    "variants": [
+      {
+        "source": "assets/optimized/gsea1-640-e49c8db89549.webp",
+        "width": 640,
+        "bytes": 30734
+      },
+      {
+        "source": "assets/optimized/gsea1-960-59cdf59d58c7.webp",
+        "width": 960,
+        "bytes": 54780
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/GSEA2.jpeg": {
+    "width": 900,
+    "height": 1600,
+    "originalBytes": 138038,
+    "variants": [
+      {
+        "source": "assets/optimized/gsea2-640-1d3847515ea4.webp",
+        "width": 640,
+        "bytes": 52764
+      },
+      {
+        "source": "assets/optimized/gsea2-900-88e6ea876b12.webp",
+        "width": 900,
+        "bytes": 83312
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/GSEA3.JPG": {
+    "width": 1125,
+    "height": 2000,
+    "originalBytes": 219285,
+    "variants": [
+      {
+        "source": "assets/optimized/gsea3-640-4e1b7b43b2ca.webp",
+        "width": 640,
+        "bytes": 40990
+      },
+      {
+        "source": "assets/optimized/gsea3-1125-2f4d1cfc91fc.webp",
+        "width": 1125,
+        "bytes": 95972
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/182083482_311874463835707_1428158974539628495_n.jpeg": {
+    "width": 960,
+    "height": 960,
+    "originalBytes": 49229,
+    "variants": [
+      {
+        "source": "assets/optimized/182083482-311874463835707-1428158974539628495-n-640-29cbb4c11cac.webp",
+        "width": 640,
+        "bytes": 22174
+      },
+      {
+        "source": "assets/optimized/182083482-311874463835707-1428158974539628495-n-960-a902b94e4c4d.webp",
+        "width": 960,
+        "bytes": 33154
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/WhatsApp Image 2021-01-28 at 6.02.59 PM.jpeg": {
+    "width": 624,
+    "height": 384,
+    "originalBytes": 43716,
+    "variants": [
+      {
+        "source": "assets/optimized/whatsapp-image-2021-01-28-at-6-02-59-pm-624-4c806c147b2f.webp",
+        "width": 624,
+        "bytes": 16196
+      }
+    ]
+  },
+  "assets/images/Projects/GSEA/151070035_3715536891867521_6737781672471853444_n.jpeg": {
+    "width": 960,
+    "height": 960,
+    "originalBytes": 44465,
+    "variants": [
+      {
+        "source": "assets/optimized/151070035-3715536891867521-6737781672471853444-n-640-0dc21c75c033.webp",
+        "width": 640,
+        "bytes": 14542
+      },
+      {
+        "source": "assets/optimized/151070035-3715536891867521-6737781672471853444-n-960-6f39ec1771bf.webp",
+        "width": 960,
+        "bytes": 22620
+      }
+    ]
+  },
+  "assets/images/Projects/Fellowship/Fellowship1.jpeg": {
+    "width": 1200,
+    "height": 540,
+    "originalBytes": 54358,
+    "variants": [
+      {
+        "source": "assets/optimized/fellowship1-640-e7f87343d90c.webp",
+        "width": 640,
+        "bytes": 16048
+      },
+      {
+        "source": "assets/optimized/fellowship1-1200-3e3cf5cdffc3.webp",
+        "width": 1200,
+        "bytes": 35500
+      }
+    ]
+  },
+  "assets/images/Projects/Fellowship/Fellowship3.jpeg": {
+    "width": 1536,
+    "height": 2048,
+    "originalBytes": 433069,
+    "variants": [
+      {
+        "source": "assets/optimized/fellowship3-640-b6f81d9a09e4.webp",
+        "width": 640,
+        "bytes": 78012
+      },
+      {
+        "source": "assets/optimized/fellowship3-1280-242688808ebd.webp",
+        "width": 1280,
+        "bytes": 278832
+      }
+    ]
+  },
+  "assets/images/Projects/Fellowship/Fellowship6.png": {
+    "width": 2160,
+    "height": 2160,
+    "originalBytes": 1469277,
+    "variants": [
+      {
+        "source": "assets/optimized/fellowship6-640-5d87f9532950.webp",
+        "width": 640,
+        "bytes": 20910
+      },
+      {
+        "source": "assets/optimized/fellowship6-1280-1430b33f77be.webp",
+        "width": 1280,
+        "bytes": 44228
+      }
+    ]
+  },
+  "assets/images/Projects/Acamica/acamica1.jpeg": {
+    "width": 715,
+    "height": 539,
+    "originalBytes": 113968,
+    "variants": [
+      {
+        "source": "assets/optimized/acamica1-640-c266fe96cada.webp",
+        "width": 640,
+        "bytes": 35116
+      },
+      {
+        "source": "assets/optimized/acamica1-715-92adabf5c33f.webp",
+        "width": 715,
+        "bytes": 42058
+      }
+    ]
+  },
+  "assets/images/Projects/Acamica/acamica2.jpeg": {
+    "width": 1280,
+    "height": 960,
+    "originalBytes": 59859,
+    "variants": [
+      {
+        "source": "assets/optimized/acamica2-640-cc79b7fb605f.webp",
+        "width": 640,
+        "bytes": 14272
+      },
+      {
+        "source": "assets/optimized/acamica2-1280-a8e0333c2a94.webp",
+        "width": 1280,
+        "bytes": 33580
+      }
+    ]
+  },
+  "assets/images/Projects/Acamica/acamica3.jpeg": {
+    "width": 1280,
+    "height": 652,
+    "originalBytes": 158427,
+    "variants": [
+      {
+        "source": "assets/optimized/acamica3-640-04acdae48eb5.webp",
+        "width": 640,
+        "bytes": 28864
+      },
+      {
+        "source": "assets/optimized/acamica3-1280-c127df311d39.webp",
+        "width": 1280,
+        "bytes": 67006
+      }
+    ]
+  },
+  "assets/images/Projects/Acamica/01-Home@2x.jpg": {
+    "width": 2880,
+    "height": 3042,
+    "originalBytes": 571219,
+    "variants": [
+      {
+        "source": "assets/optimized/01-home-2x-640-4fb95f96354b.webp",
+        "width": 640,
+        "bytes": 25824
+      },
+      {
+        "source": "assets/optimized/01-home-2x-1280-d4c1d30002c7.webp",
+        "width": 1280,
+        "bytes": 64876
+      }
+    ]
+  },
+  "assets/images/Projects/CEU/CEU2.jpeg": {
+    "width": 720,
+    "height": 1280,
+    "originalBytes": 89070,
+    "variants": [
+      {
+        "source": "assets/optimized/ceu2-640-05a0c4726c7c.webp",
+        "width": 640,
+        "bytes": 54452
+      },
+      {
+        "source": "assets/optimized/ceu2-720-467f390cc800.webp",
+        "width": 720,
+        "bytes": 61720
+      }
+    ]
+  },
+  "assets/images/Projects/CEU/seneca1.jpg": {
+    "width": 960,
+    "height": 639,
+    "originalBytes": 62232,
+    "variants": [
+      {
+        "source": "assets/optimized/seneca1-640-0c62b8075575.webp",
+        "width": 640,
+        "bytes": 34356
+      },
+      {
+        "source": "assets/optimized/seneca1-960-658e8eaa1fe7.webp",
+        "width": 960,
+        "bytes": 53476
+      }
+    ]
+  },
+  "assets/images/Projects/CEU/CEU3.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "originalBytes": 130826,
+    "variants": [
+      {
+        "source": "assets/optimized/ceu3-640-034b82be4724.webp",
+        "width": 640,
+        "bytes": 58878
+      },
+      {
+        "source": "assets/optimized/ceu3-1000-bf00244c5f43.webp",
+        "width": 1000,
+        "bytes": 114470
+      }
+    ]
+  },
+  "assets/images/Projects/HackatonCarvajal/Team.jpeg": {
+    "width": 6000,
+    "height": 4000,
+    "originalBytes": 12190290,
+    "variants": [
+      {
+        "source": "assets/optimized/team-640-611995f63b6f.webp",
+        "width": 640,
+        "bytes": 43898
+      },
+      {
+        "source": "assets/optimized/team-1280-b75e4c2ec03e.webp",
+        "width": 1280,
+        "bytes": 114020
+      }
+    ]
+  },
+  "assets/images/Projects/HackatonCarvajal/WhatsApp Image 2021-01-26 at 3.39.13 PM.jpeg": {
+    "width": 1152,
+    "height": 864,
+    "originalBytes": 93809,
+    "variants": [
+      {
+        "source": "assets/optimized/whatsapp-image-2021-01-26-at-3-39-13-pm-640-bffcc142f435.webp",
+        "width": 640,
+        "bytes": 31556
+      },
+      {
+        "source": "assets/optimized/whatsapp-image-2021-01-26-at-3-39-13-pm-1152-7e94109e7fe6.webp",
+        "width": 1152,
+        "bytes": 62494
+      }
+    ]
+  },
+  "assets/images/Projects/MaratonSeguridad/mseguridad.jpg": {
+    "width": 1024,
+    "height": 576,
+    "originalBytes": 82885,
+    "variants": [
+      {
+        "source": "assets/optimized/mseguridad-640-df13dffe4829.webp",
+        "width": 640,
+        "bytes": 34930
+      },
+      {
+        "source": "assets/optimized/mseguridad-1024-bad7cbf95a96.webp",
+        "width": 1024,
+        "bytes": 64724
+      }
+    ]
+  },
+  "assets/images/Projects/LearnToTransit/lt.png": {
+    "width": 180,
+    "height": 180,
+    "originalBytes": 10279,
+    "variants": [
+      {
+        "source": "assets/optimized/lt-180-a07dfe1904cf.webp",
+        "width": 180,
+        "bytes": 4414
+      }
+    ]
+  },
+  "assets/images/Projects/LearnToTransit/diploma.jpeg": {
+    "width": 941,
+    "height": 1280,
+    "originalBytes": 129021,
+    "variants": [
+      {
+        "source": "assets/optimized/diploma-640-0a9d8c854455.webp",
+        "width": 640,
+        "bytes": 56626
+      },
+      {
+        "source": "assets/optimized/diploma-941-55b7f5751a56.webp",
+        "width": 941,
+        "bytes": 93218
+      }
+    ]
+  },
+  "assets/images/Hobbies/Cocina2.jpeg": {
+    "width": 768,
+    "height": 1024,
+    "originalBytes": 88749,
+    "variants": [
+      {
+        "source": "assets/optimized/cocina2-640-47a53a4212ec.webp",
+        "width": 640,
+        "bytes": 46756
+      },
+      {
+        "source": "assets/optimized/cocina2-768-2c9c67c0c091.webp",
+        "width": 768,
+        "bytes": 59870
+      }
+    ]
+  },
+  "assets/images/Hobbies/Cocina3.jpeg": {
+    "width": 757,
+    "height": 1600,
+    "originalBytes": 240419,
+    "variants": [
+      {
+        "source": "assets/optimized/cocina3-640-3add544a8b17.webp",
+        "width": 640,
+        "bytes": 167978
+      },
+      {
+        "source": "assets/optimized/cocina3-757-033d8882cb40.webp",
+        "width": 757,
+        "bytes": 214900
+      }
+    ]
+  },
+  "assets/images/Hobbies/Cocina4.jpeg": {
+    "width": 757,
+    "height": 1600,
+    "originalBytes": 167844,
+    "variants": [
+      {
+        "source": "assets/optimized/cocina4-640-8d3343fb644a.webp",
+        "width": 640,
+        "bytes": 108428
+      },
+      {
+        "source": "assets/optimized/cocina4-757-bc0256fc1ace.webp",
+        "width": 757,
+        "bytes": 139562
+      }
+    ]
+  },
+  "assets/images/Hobbies/fbdevcircles.jpg": {
+    "width": 1080,
+    "height": 810,
+    "originalBytes": 79184,
+    "variants": [
+      {
+        "source": "assets/optimized/fbdevcircles-640-281c002cf274.webp",
+        "width": 640,
+        "bytes": 37904
+      },
+      {
+        "source": "assets/optimized/fbdevcircles-1080-0877a6fb07c1.webp",
+        "width": 1080,
+        "bytes": 76308
+      }
+    ]
+  },
+  "assets/images/Hobbies/node1.jpeg": {
+    "width": 899,
+    "height": 1599,
+    "originalBytes": 109866,
+    "variants": [
+      {
+        "source": "assets/optimized/node1-640-41594a87d9d3.webp",
+        "width": 640,
+        "bytes": 47724
+      },
+      {
+        "source": "assets/optimized/node1-899-757910673009.webp",
+        "width": 899,
+        "bytes": 69926
+      }
+    ]
+  },
+  "assets/images/Hobbies/node2.jpeg": {
+    "width": 899,
+    "height": 1599,
+    "originalBytes": 204315,
+    "variants": [
+      {
+        "source": "assets/optimized/node2-640-bd4aecad8571.webp",
+        "width": 640,
+        "bytes": 109028
+      },
+      {
+        "source": "assets/optimized/node2-899-19af668ef544.webp",
+        "width": 899,
+        "bytes": 161578
+      }
+    ]
+  },
+  "assets/images/Hobbies/Videogames1.jpeg": {
+    "width": 910,
+    "height": 1227,
+    "originalBytes": 125621,
+    "variants": [
+      {
+        "source": "assets/optimized/videogames1-640-94e556202c92.webp",
+        "width": 640,
+        "bytes": 58756
+      },
+      {
+        "source": "assets/optimized/videogames1-910-a627c5c014ec.webp",
+        "width": 910,
+        "bytes": 89270
+      }
+    ]
+  },
+  "assets/images/Hobbies/Videogames2.jpeg": {
+    "width": 1079,
+    "height": 1077,
+    "originalBytes": 144415,
+    "variants": [
+      {
+        "source": "assets/optimized/videogames2-640-985941886898.webp",
+        "width": 640,
+        "bytes": 49162
+      },
+      {
+        "source": "assets/optimized/videogames2-1079-e11f86c707df.webp",
+        "width": 1079,
+        "bytes": 104798
+      }
+    ]
+  },
+  "assets/images/Hobbies/Socks1.jpeg": {
+    "width": 757,
+    "height": 1600,
+    "originalBytes": 66106,
+    "variants": [
+      {
+        "source": "assets/optimized/socks1-640-8f6778a47402.webp",
+        "width": 640,
+        "bytes": 31366
+      },
+      {
+        "source": "assets/optimized/socks1-757-f6bdf7d6c709.webp",
+        "width": 757,
+        "bytes": 38526
+      }
+    ]
+  },
+  "assets/images/Hobbies/Socks2.jpeg": {
+    "width": 757,
+    "height": 1600,
+    "originalBytes": 113482,
+    "variants": [
+      {
+        "source": "assets/optimized/socks2-640-066d29e13a52.webp",
+        "width": 640,
+        "bytes": 62470
+      },
+      {
+        "source": "assets/optimized/socks2-757-209cc1620c13.webp",
+        "width": 757,
+        "bytes": 75440
+      }
+    ]
+  }
+}
