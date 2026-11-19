@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "images:generate": "node scripts/optimize-images.cjs",
-    "test": "node scripts/test-performance.cjs"
+    "test": "node scripts/test-performance.cjs",
+    "test:audio": "node scripts/test-bass.cjs && node scripts/test-audio-state.cjs && node scripts/test-player.cjs",
+    "preview": "node scripts/serve.cjs"
   },
   "devDependencies": {
     "sharp": "0.34.5",

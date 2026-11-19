@@ -773,6 +773,7 @@ footer.footer {
 
 @media (any-pointer: fine) {
   .cursor {
+    z-index: 3000;
     position: fixed;
     top: 0;
     left: 0;

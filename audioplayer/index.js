@@ -1,14 +1,10 @@
 const createLoop = require('raf-loop');
 const createApp = require('./lib/app');
-const newArray = require('new-array');
 const geoScene = require('./lib/geoScene');
 const getPalette = require('./lib/palette');
-const rightNow = require('right-now');
-const randomFloat = require('random-float');
 const setupInteractions = require('./lib/setupInteractions');
 const log = require('./lib/log');
 
-const isMobile = require('./lib/isMobile');
 const showIntro = require('./lib/intro');
 const EffectComposer = require('./lib/EffectComposer');
 const BloomPass = require('./lib/BloomPass');
@@ -158,129 +154,27 @@ function setupScene ({ palettes, envMap }) {
 
   const audio = createAudio();
   let started = false;
-  let time = 0;
-  let switchPalettes = false;
-  let readyForGeometry = newArray(audio.binCount, true);
-  let readyForPaletteChange = false;
-  let paletteInterval;
-
-  const whitePalette = [ '#fff', '#d3d3d3', '#a5a5a5' ];
+  let paletteCooldown = 0;
+  let bassHits = 0;
+  const whitePalette = ['#fff', '#d3d3d3', '#a5a5a5'];
   const interactions = setupInteractions({ whitePalette, scene, controls, audio, camera, geo });
-
-  let hasNextGeometry = false;
-  let hasNextPalette = false;
-  let ignorePaletteSwap = false;
-  const introAutoGeo = setInterval(() => {
-    hasNextGeometry = true;
-    geo.nextGeometry();
-  }, 400);
-
-  // if (isMobile) {
-    audio.skip();
-  // } else {
-  //   audio.queue();
-  //   audio.once('ready', () => {
-  //     audio.playQueued();
-  //   });
-  // }
-
-  const randomPaletteInterval = () => {
-    hasNextPalette = false;
-    setTimeout(() => {
-      if (!hasNextPalette && !ignorePaletteSwap) {
-        hasNextPalette = true;
-        // fake data for iOS
-        geo.nextPalette();
-      }
-      randomPaletteInterval();
-    }, randomFloat(4000, 8000));
-  };
-
-  // handle slow internet on first track
-  interactions.once('stop', (isLoaded) => {
-    // every time we release spacebar, we reset the counter here
-    interactions.on('stop', () => {
-      ignorePaletteSwap = false;
-      hasNextPalette = true;
-      resetPaletteSwapping();
-      readyForPaletteChange = false;
-    });
-    interactions.on('start', () => {
-      ignorePaletteSwap = true;
-    })
-
-    let firstSwapTimeout = null;
-    const onAudioPlaying = () => {
-      const firstSwapDelay = 7721;
-      firstSwapTimeout = setTimeout(() => {
-        firstSwap();
-        randomPaletteInterval();
-      }, firstSwapDelay);
-    };
-    if (!isLoaded) audio.once('ready', onAudioPlaying);
-    else onAudioPlaying();
-    interactions.once('start', () => {
-      if (firstSwapTimeout) clearTimeout(firstSwapTimeout);
-    });
-  });
-
-  const randomGeoInterval = () => {
-    hasNextGeometry = false;
-    setTimeout(() => {
-      if (!hasNextGeometry) {
-        hasNextGeometry = true;
-        // fake data for iOS
-        geo.nextGeometry();
-      }
-      randomGeoInterval();
-    }, randomFloat(500, 2000));
-  };
-
-  showIntro({ interactions }, () => {
-    started = true;
-    clearInterval(introAutoGeo);
-    randomGeoInterval();
-  });
-
-  setInterval(() => {
-    for (let i = 0; i < readyForGeometry.length; i++) {
-      readyForGeometry[i] = true;
-    }
-  }, 100);
-
+  showIntro({ interactions }, () => { started = true; });
+  audio.on('playing', () => { bassHits = 0; paletteCooldown = 0; geo.nextPalette(); });
   loop.on('tick', dt => {
-    time += dt;
-    if (!started) return;
-
     audio.update(dt);
-
-    for (let i = 0; i < audio.beats.length; i++) {
-      if (readyForGeometry[i] && audio.beats[i]) {
-        hasNextGeometry = true;
-        geo.nextGeometry({ type: i });
-        readyForGeometry[i] = false;
+    paletteCooldown = Math.max(0, paletteCooldown - dt);
+    geo.bassLevel = audio.bassLevel;
+    if (!started || interactions.keyDown || !audio.playing) return;
+    geo.globalSpeed = 0.65 + audio.bassLevel * 0.85;
+    audio.beats.forEach((beat, type) => { if (beat) geo.nextGeometry({ type }); });
+    if (audio.beats.some(Boolean)) {
+      bassHits++;
+      // Make larger visual changes on musical accents, not a random timer.
+      if (bassHits >= 4 && paletteCooldown === 0) {
+        geo.nextPalette(); bassHits = 0; paletteCooldown = 1800;
       }
     }
-    if (!interactions.keyDown && readyForPaletteChange && audio.beats[1] && switchPalettes) {
-      hasNextPalette = true;
-      geo.nextPalette();
-      readyForPaletteChange = false;
-    }
   });
-
-  function firstSwap () {
-    switchPalettes = true;
-    geo.nextPalette();
-    resetPaletteSwapping();
-  }
-  
-  function resetPaletteSwapping () {
-    readyForPaletteChange = false;
-    if (paletteInterval) clearInterval(paletteInterval);
-    paletteInterval = setInterval(() => {
-      readyForPaletteChange = true;
-    }, 2000);
-  }
 }
 
 function helloWorld () {
