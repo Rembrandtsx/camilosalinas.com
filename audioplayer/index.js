@@ -57,9 +57,6 @@ helloWorld();
 
 
 
-window.onkeydown = function (e) { 
-  if (e.keyCode === 32) return false;
-};
 setupPost();
 
 const supportsMedia = true;
@@ -158,6 +155,9 @@ function setupScene ({ palettes, envMap }) {
   let bassHits = 0;
   const whitePalette = ['#fff', '#d3d3d3', '#a5a5a5'];
   const interactions = setupInteractions({ whitePalette, scene, controls, audio, camera, geo });
+  audio.on('pause', () => loop.stop());
+  audio.on('resume', () => loop.start());
+  interactions.on('start', () => loop.start());
   showIntro({ interactions }, () => { started = true; });
   audio.on('playing', () => { bassHits = 0; paletteCooldown = 0; geo.nextPalette(); });
   loop.on('tick', dt => {

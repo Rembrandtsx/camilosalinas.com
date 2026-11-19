@@ -11,6 +11,7 @@ class FakeAudio {
   addEventListener(name, callback) { this.events[name] = callback; }
   setAttribute() {}
   load() {}
+  pause() { this.paused = true; }
   play() { this.paused = false; return Promise.resolve(); }
 }
 class FakeContext {
@@ -43,6 +44,13 @@ assert.ok(context.gains[1].value > 0, 'Advancing media must actually unmute its 
 assert.ok(player.bassLevel > 0, 'The real signal reaches bass analysis after recovery');
 player.update(16);
 assert.equal(starts, 1);
+player.togglePause();
+assert.equal(audio.paused, true);
+assert.equal(player.paused, true);
+const position = audio.currentTime;
+player.togglePause();
+assert.equal(audio.paused, false);
+assert.equal(audio.currentTime, position, 'Resume retains the current position');
 context.state = 'suspended';
 player.update(16);
 assert.equal(player.playing, false, 'A suspended audio graph is not playing');

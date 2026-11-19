@@ -22,6 +22,7 @@ module.exports = function createAudio() {
   player.bassLevel = 0;
   player.binCount = 2;
   player.playing = false;
+  player.paused = false;
 
   function resume() {
     if (context.state === 'suspended') context.resume().catch(reportError);
@@ -111,11 +112,32 @@ module.exports = function createAudio() {
     player.bassLevel = 0;
     // Call play inside the gesture, even when the file is still loading (Safari/iOS).
     const active = current;
+    player.paused = false;
+    player.emit('resume');
+    player.emit('trackchange', active.track);
     player.emit('loading');
     active.audio.play().catch(error => {
       // Switching quickly aborts the previous play promise; that is not a playback error.
       if (current === active && !active.disposed) reportError(error);
     });
+  };
+  player.togglePause = () => {
+    if (!current || current.failed) return;
+    if (!player.paused) {
+      player.paused = true;
+      current.audio.pause();
+      player.playing = false;
+      player.emit('pause');
+    } else {
+      resume();
+      const active = current;
+      active.announced = false;
+      player.paused = false;
+      active.audio.play().catch(error => {
+        if (current === active && !active.disposed) reportError(error);
+      });
+      player.emit('resume');
+    }
   };
   function updateBoundary(record) {
     if (record !== current || record.failed || !record.ready) return;
