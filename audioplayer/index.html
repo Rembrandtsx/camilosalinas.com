@@ -54,6 +54,17 @@
           <div class="track-artist"></div>
         </div>
       </div>
+      <section class="playback-controls" aria-label="Music player" hidden>
+        <div class="now-playing" aria-live="polite">
+          <span class="playback-status">Now playing</span>
+          <strong class="current-track"></strong>
+        </div>
+        <div class="playback-actions">
+          <button type="button" class="playback-toggle" aria-label="Pause music and animation">Pause</button>
+          <button type="button" class="next-track">Next track</button>
+          <a class="spotify-track" target="_blank" rel="noopener noreferrer">Open in Spotify ↗</a>
+        </div>
+      </section>
     </div>
     <script src="vendor/three.min.js" defer></script>
     <script src="bundle.js" defer></script>

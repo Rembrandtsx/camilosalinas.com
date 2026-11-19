@@ -435,3 +435,66 @@ a:hover::after {
     font-size: 9.5px;
   }
 }
+
+/* Quiet keycap controls echo the introductory spacebar hint. */
+.playback-controls {
+  position: absolute;
+  z-index: 3;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  color: #fff;
+  mix-blend-mode: difference;
+  font-family: "Courier", monospace;
+  text-align: center;
+  opacity: 0.6;
+  transition: opacity 160ms ease;
+}
+.playback-controls:hover, .playback-controls:focus-within { opacity: 1; }
+.playback-controls[hidden], .mobileButton[hidden] { display: none; }
+.now-playing { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 10px; margin-bottom: 4px; }
+.playback-status { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; line-height: 18px; }
+.current-track { font: inherit; font-size: 11px; line-height: 18px; }
+.playback-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.playback-actions button, .playback-actions a {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.playback-actions button::before, .playback-actions a::before {
+  content: "";
+  position: absolute;
+  inset: 5px 0;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+.playback-actions .playback-toggle { min-width: 78px; }
+.playback-actions a::after { display: none; }
+.playback-actions button:hover::before, .playback-actions a:hover::before { opacity: 0.65; }
+.playback-actions :focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.playback-actions button:disabled { cursor: wait; opacity: 0.5; }
+@media (max-width: 480px) {
+  .playback-controls { max-width: calc(100% - 24px); bottom: max(16px, env(safe-area-inset-bottom)); }
+  .playback-actions { gap: 6px; }
+  .playback-actions button, .playback-actions a { padding: 10px; font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .playback-controls { transition: none; }
+}

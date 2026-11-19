@@ -2,46 +2,73 @@
   {
     "file": "01_-_Waste_of_Time-Mø",
     "start": 0.8,
-    "end": 213.2
+    "end": 213.2,
+    "title": "Waste of Time",
+    "artist": "MØ",
+    "spotify": "https://open.spotify.com/track/0qOkcMtx6Nhi5zcMHVSmXv"
   },
   {
     "file": "02_-_Walk_This_Way-Mø",
     "start": 9.9,
-    "end": 207.1
+    "end": 207.1,
+    "title": "Walk This Way",
+    "artist": "MØ",
+    "spotify": "https://open.spotify.com/track/4mNNYgTVUIR0gshtY68NH2"
   },
   {
     "file": "03_-_Final_Song-Mø",
     "start": 18.4,
-    "end": 247.6
+    "end": 247.6,
+    "title": "Final Song",
+    "artist": "MØ",
+    "spotify": "https://open.spotify.com/track/4qqArAiTPueDxIp7cf87h7"
   },
   {
     "file": "04_-_Kamikaze-Mø",
-    "start": 0.2,
-    "end": 218
+    "start": 9.2,
+    "end": 216.8,
+    "title": "Kamikaze",
+    "artist": "MØ",
+    "spotify": "https://open.spotify.com/track/6TjP1C3sGQH1jBfzUXfcMg"
   },
   {
     "file": "05_-_When_I_Was_Young-Mø",
-    "start": 2.8,
-    "end": 228.4
+    "start": 10.4,
+    "end": 227.8,
+    "title": "When I Was Young",
+    "artist": "MØ",
+    "spotify": "https://open.spotify.com/track/5UEvfBx5yQ14HALjI8jk3t"
   },
   {
     "file": "06_-_Despair_Hangover_And_Ecstasy-The_Dø",
     "start": 7.9,
-    "end": 431
+    "end": 431,
+    "title": "Despair, Hangover & Ecstasy",
+    "artist": "The Dø",
+    "spotify": "https://open.spotify.com/track/6KrHMGsh5lpnCBpYM5a4rT"
   },
   {
     "file": "07_-_Praf_De_Stele-Vita_De_Vie",
     "start": 0.8,
-    "end": 206
+    "end": 206,
+    "title": "Praf de Stele",
+    "artist": "Vita de Vie",
+    "spotify": "https://open.spotify.com/track/3vAxmB77Z1hYTxPTkbcIRF"
   },
   {
     "file": "08_-_7th_Element-Vitas",
     "start": 0.1,
-    "end": 249
+    "end": 249,
+    "title": "7 Element",
+    "artist": "Vitas",
+    "spotify": "https://open.spotify.com/track/7J9mBHG4J2eIfDAv5BehKA"
   },
   {
     "file": "09_-_Conqueror-AURORA",
     "start": 0.6,
-    "end": 205.3
+    "end": 205.3,
+    "title": "Conqueror",
+    "artist": "AURORA",
+    "spotify": "https://open.spotify.com/track/3qBn2YAFbX16coGmScr7Y5"
   }
 ]

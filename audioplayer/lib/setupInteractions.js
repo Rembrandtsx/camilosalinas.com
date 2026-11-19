@@ -25,15 +25,45 @@ module.exports = function ({
   const trackArtist = document.querySelector(".track-artist");
   const musicContainer = document.querySelector(".music-container");
 
+  const playback = document.querySelector(".playback-controls");
+  const toggle = document.querySelector(".playback-toggle");
+  const status = document.querySelector(".playback-status");
+  const currentTrack = document.querySelector(".current-track");
+  const spotify = document.querySelector(".spotify-track");
+  toggle.addEventListener("click", () => audio.togglePause());
+  document.querySelector(".next-track").addEventListener("click", () => { beginEvent(); endEvent(); });
+  audio.on("trackchange", track => {
+    playback.hidden = false;
+    currentTrack.textContent = track.title + " — " + track.artist;
+    spotify.href = track.spotify;
+    spotify.setAttribute("aria-label", "Open " + track.title + " by " + track.artist + " in Spotify (new tab)");
+    const mobile = document.querySelector(".mobileButton");
+    if (mobile) mobile.hidden = true;
+  });
+  function showPlaybackState(paused) {
+    toggle.textContent = paused ? "Resume" : "Pause";
+    toggle.setAttribute("aria-label", (paused ? "Resume" : "Pause") + " music and animation");
+    status.textContent = paused ? "Paused" : "Now playing";
+  }
+  audio.on("pause", () => showPlaybackState(true));
+  audio.on("resume", () => showPlaybackState(false));
   audio.on("ready", () => { isLoaded = true; });
   audio.on("loading", () => {
     trackContainer.style.display = "table";
     trackNumber.textContent = "Loading track…";
+    status.textContent = "Loading…";
+    toggle.disabled = true;
   });
-  audio.on("playing", () => { if (!ret.keyDown) setupName(null); });
+  audio.on("playing", () => {
+    if (!ret.keyDown) setupName(null);
+    toggle.disabled = false;
+    showPlaybackState(false);
+  });
   audio.on("playbackerror", () => {
     trackContainer.style.display = "table";
     trackNumber.textContent = "Could not play this track";
+    toggle.disabled = true;
+    status.textContent = "Unable to play — try next track";
     trackName.textContent = "Hold and release to try the next song";
     trackArtist.textContent = "";
   });
@@ -45,6 +75,7 @@ module.exports = function ({
     if (enabled) return;
     enabled = true;
     window.addEventListener("keydown", (ev) => {
+      if (ev.target.closest("button, a, input, textarea, select")) return;
       if (ev.keyCode === 32 && !ret.keyDown) {
         ev.preventDefault();
         beginEvent();

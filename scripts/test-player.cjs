@@ -12,6 +12,13 @@ const server=require('./serve.cjs')(path.resolve(__dirname,'..'));
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.route('https://**/*',r=>r.abort());
   await page.addInitScript(()=>{
+    window.__drawCalls=0;
+    for (const kind of [window.WebGLRenderingContext,window.WebGL2RenderingContext].filter(Boolean)) {
+      for (const method of ['drawArrays','drawElements']) {
+        const original=kind.prototype[method];
+        kind.prototype[method]=function(...args){window.__drawCalls++;return original.apply(this,args);};
+      }
+    }
     const Original=window.AudioContext;
     window.__analysers=[];
     window.AudioContext=class extends Original {createAnalyser(){const a=super.createAnalyser();window.__analysers.push(a);return a;}};
@@ -37,7 +44,25 @@ const server=require('./serve.cjs')(path.resolve(__dirname,'..'));
     assert.equal(state.length,1,'Old track elements are released');
     assert.equal(state[0].track,tracks[i].file);
     assert.ok(state[0].time>=tracks[i].start && state[0].time<tracks[i].start+4,JSON.stringify(state));
-    if(i===1 || i===2) {
+    assert.equal(await frame.locator('.spotify-track').getAttribute('href'),tracks[i].spotify);
+    assert.equal(await frame.locator('.current-track').textContent(),tracks[i].title+' — '+tracks[i].artist);
+    if(i===0) {
+      await frame.getByRole('button',{name:'Pause music and animation',exact:true}).click();
+      const pausedAt=await frame.locator('audio').evaluate(a=>a.currentTime);
+      await page.waitForTimeout(100);
+      const frozen=await frame.evaluate(()=>window.__drawCalls);
+      assert.ok(frozen>0,'Rendering was active before pausing');
+      await page.waitForTimeout(400);
+      assert.equal(await frame.locator('audio').evaluate(a=>a.paused),true);
+      assert.equal(await frame.locator('audio').evaluate(a=>a.currentTime),pausedAt,'Pause holds the playback position');
+      assert.equal(await frame.evaluate(()=>window.__drawCalls),frozen,'Pause stops rendering new animation frames');
+      // Keyboard activation must resume instead of selecting a different track.
+      await frame.getByRole('button',{name:'Resume music and animation',exact:true}).press('Space');
+      await frame.waitForFunction(t=>document.querySelector('audio').currentTime>t,pausedAt);
+      assert.equal(await frame.locator('audio').getAttribute('data-track'),tracks[i].file);
+      await frame.locator('#canvas').click();
+    }
+    if(i>=1 && i<=4) {
       await frame.locator('audio').evaluate((a,end)=>{a.currentTime=end-0.03;},tracks[i].end);
       await frame.waitForFunction(start=>{const a=document.querySelector('audio');return !a.seeking&&!a.paused&&a.currentTime>=start&&a.currentTime<start+2;},tracks[i].start);
       console.log(tracks[i].file+': starts and loops at '+tracks[i].start+'s, before noise after '+tracks[i].end+'s.');
@@ -67,9 +92,11 @@ const server=require('./serve.cjs')(path.resolve(__dirname,'..'));
   await phone.locator('.mobileButton').waitFor();
   await phone.locator('.mobileButton').dispatchEvent('touchstart');await phone.waitForTimeout(120);await phone.locator('.mobileButton').dispatchEvent('touchend');
   await phone.waitForFunction(()=>{const a=document.querySelector('audio');return a&&!a.paused&&a.currentTime>0.8;});
-  await phone.locator('.mobileButton').dispatchEvent('touchstart');await phone.locator('.mobileButton').dispatchEvent('touchcancel');
+  await phone.getByRole('button',{name:'Pause music and animation',exact:true}).click();
+  assert.equal(await phone.locator('audio').evaluate(a=>a.paused),true);
+  await phone.getByRole('button',{name:'Next track',exact:true}).click();
   await phone.waitForFunction(()=>{const a=document.querySelector('audio[data-track^="02_"]');return a&&!a.paused&&a.currentTime>=9.9;});
   await phone.close();
-  console.log('All 9 tracks play; cue loops, real analyser output, iframe cursor entry/exit, and mobile controls passed.');
+  console.log('All 9 tracks play; cue loops, real analyser output, iframe cursor entry/exit, pause/resume with a frozen canvas, Spotify links, and mobile controls passed.');
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1}).finally(()=>server.close());
