@@ -4,8 +4,6 @@ const isMobile = require("./isMobile");
 const noop = function () {};
 
 module.exports = function (opt = {}, cb = noop) {
-  const intro1a = document.querySelector(".intro-1a");
-  const intro1b = document.querySelector(".intro-1b");
   const intro2 = document.querySelector(".intro-2");
   const intro3 = document.querySelector(".intro-3");
   const header = document.querySelector(".header-container");
@@ -14,33 +12,21 @@ module.exports = function (opt = {}, cb = noop) {
   const yOff = 10;
   const globalDuration = 0.25;
   const elementsToHide = [header, logo].filter(Boolean);
-  // const WAIT_TIME_A = 1.5;
-  const WAIT_TIME_B = 3.5;
 
   let finishedEarly = false;
   const interactions = opt.interactions;
 
   let delayedReleaseSpacebar = null;
 
-  const introHint = intro1a;
   if (isMobile) {
     intro2.innerHTML = "Hold the button below to load a new track";
     intro3.innerHTML = "Release the button to play";
   }
 
-  const introDelay = 0.0;
   animateIn(header, {
     childTagName: "div",
   });
-  showIntroTrackName();
-
-  function showIntroTrackName() {
-    animateIn(introHint, { delay: introDelay + 0.5 }, () => {
-      animateOut(introHint, { delay: WAIT_TIME_B }, () => {
-        showIdleSplash();
-      });
-    });
-  }
+  showIdleSplash();
 
   function showIdleSplash() {
     animateIn(intro2);

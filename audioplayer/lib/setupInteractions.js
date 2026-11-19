@@ -16,6 +16,7 @@ module.exports = function ({
   ret.easterEggDown = false;
   ret.enable = enable;
   let isLoaded = false;
+  let enabled = false;
 
   const originalDistance = controls.distance;
   const trackContainer = document.querySelector(".track-aligner");
@@ -24,11 +25,28 @@ module.exports = function ({
   const trackArtist = document.querySelector(".track-artist");
   const musicContainer = document.querySelector(".music-container");
 
+  audio.on("ready", () => { isLoaded = true; });
+  audio.on("loading", () => {
+    trackContainer.style.display = "table";
+    trackNumber.textContent = "Loading track…";
+  });
+  audio.on("playing", () => { if (!ret.keyDown) setupName(null); });
+  audio.on("playbackerror", () => {
+    trackContainer.style.display = "table";
+    trackNumber.textContent = "Could not play this track";
+    trackName.textContent = "Hold and release to try the next song";
+    trackArtist.textContent = "";
+  });
+  window.addEventListener("blur", () => { if (ret.keyDown) endEvent(); });
+
   return ret;
 
   function enable() {
+    if (enabled) return;
+    enabled = true;
     window.addEventListener("keydown", (ev) => {
       if (ev.keyCode === 32 && !ret.keyDown) {
+        ev.preventDefault();
         beginEvent();
         return false;
       } else if (ev.keyCode === 67 && !ret.easterEggDown) {
@@ -41,6 +59,7 @@ module.exports = function ({
     });
     window.addEventListener("keyup", (ev) => {
       if (ev.keyCode === 32 && ret.keyDown) {
+        ev.preventDefault();
         endEvent();
         return false;
       } else if (ev.keyCode === 67 && ret.easterEggDown) {
@@ -58,21 +77,21 @@ module.exports = function ({
       mobileButton.innerText = "Hold and release to change track";
       mobileButton.className = "mobileButton";
       musicContainer.appendChild(mobileButton);
-      mobileButton.addEventListener("touchstart", beginEvent);
+      mobileButton.addEventListener("touchstart", (event) => { event.preventDefault(); beginEvent(); }, { passive: false });
       mobileButton.addEventListener("touchend", endEvent);
+      mobileButton.addEventListener("touchcancel", endEvent);
     }
   }
 
   function beginEvent() {
+    if (ret.keyDown) return;
     ret.emit("start");
     previousPalette = geo.getFullPalette();
     geo.setPalette(whitePalette);
     ret.keyDown = true;
 
     isLoaded = false;
-    audio.once("ready", () => {
-      isLoaded = true;
-    });
+
     const name = audio.queue();
     setupName(name);
     audio.effect = 1;
@@ -81,6 +100,7 @@ module.exports = function ({
   }
 
   function endEvent() {
+    if (!ret.keyDown) return;
     ret.keyDown = false;
     setupName(null);
     geo.setPalette(previousPalette);

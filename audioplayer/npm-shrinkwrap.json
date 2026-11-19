@@ -4985,9 +4985,9 @@
       "optional": true
     },
     "object-assign": {
-      "version": "4.0.1",
-      "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.0.1.tgz",
-      "integrity": "sha1-mVBEVsNZi1ytT8WcJuipuxB/4L0="
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+      "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
     },
     "object-copy": {
       "version": "0.1.0",

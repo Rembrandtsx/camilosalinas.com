@@ -72,6 +72,7 @@ module.exports = function ({
       active: i < INITIAL_PARTS,
       type: Math.random() > 0.5 ? 0 : 1,
     });
+    if (mesh) mesh.ambient = i < 20;
     if (mesh && i < INITIAL_PARTS) {
       resetMesh(mesh, { initial: true, animate: false });
     }
@@ -86,6 +87,9 @@ module.exports = function ({
   loop.on("tick", (dt) => {
     time += dt / 1000;
     meshes.forEach((m) => {
+      const pulse = 1 + api.bassLevel * 0.2;
+      const scale = (m.birthScale === undefined ? 1 : m.birthScale) * pulse;
+      m.scale.set(scale, scale, scale);
       if (m.material.uniforms) {
         m.material.uniforms.aspect.value =
           window.innerWidth / window.innerHeight;
@@ -104,8 +108,9 @@ module.exports = function ({
         (m.position.y > meshHeight * 2 + tmpVec.y + 5 ||
           m.position.y < LOWEST_Y - meshHeight * 2)
       ) {
-        m.active = false;
-        m.visible = false;
+        // Recycle a small ambient layer; bass accents still add the extra shapes.
+        if (m.ambient) resetMesh(m, { animate: false });
+        else { m.active = false; m.visible = false; }
       }
     });
   });
@@ -118,6 +123,7 @@ module.exports = function ({
     setPalette,
     randomizeMaterials,
     globalSpeed: 1,
+    bassLevel: 0,
     clearGeometry,
   };
 
@@ -186,6 +192,7 @@ module.exports = function ({
     mesh.position.y = random(yOff[0], yOff[1]);
     mesh.active = true;
     mesh.visible = true;
+    mesh.birthScale = 1;
     if (mesh.material.uniforms) {
       mesh.material.uniforms.dance.value =
         Math.random() > 0.5 ? random(0, 1) : 0;
@@ -194,12 +201,12 @@ module.exports = function ({
     if (opt.animate !== false) {
       const minScale = 1e-10;
       const tween = { value: 0 };
-      mesh.scale.set(minScale, minScale, minScale);
+      mesh.birthScale = minScale;
       tweenr
         .to(tween, { duration: 0.5, value: 1, ease: "expoOut" })
         .on("update", () => {
           const value = tween.value;
-          mesh.scale.set(value, value, value);
+          mesh.birthScale = value;
         });
     }
   }
